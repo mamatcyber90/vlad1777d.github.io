@@ -42,7 +42,7 @@ I18N_SUBSITES = {
         'DL': 'en'
     }
 }
-sys.path.append(os.path.join(os.path.dirname(__file__), os.path.join(PATH, 'translations')))
+sys.path.append( join(os.path.dirname(__file__), join(PATH, 'translations')) )
 from translations import *
 
 
