@@ -23,16 +23,20 @@
 	
 	list-style-type: none;
 }
+
 .footer_main_info li {
 	list-style-type: none;
 }
+
 .footer_main_info li a {
-	color: #53b0ff;
+	color: hsl(208, 100%, 66%);
 	text-decoration: none;
 	
 	transition-duration: 0.3s;
 }
-.footer_main_info li a {
+
+.footer_main_info li:nth-child(even) a {
+	color: hsl(215, 100%, 60%);
 }
 .footer_main_info li a:hover {
 	text-decoration: underline;

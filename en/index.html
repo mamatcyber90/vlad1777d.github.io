@@ -7,24 +7,30 @@
 	<meta charset="utf-8" lang="en" />
 
 	<!-- чтобы bootstrap с мобильными устр. работал: -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Компиллятор CoffeeScript: -->
+		<script type="text/javascript" src="./../theme/js/coffeescript_compiler.js"></script>
 	
 	<!-- Скрипт плавной прокрутки: -->
-		<script type="text/javascript" src="/theme/js/smooth_scrolling.js"></script>
+		<script type="text/javascript" src="./../theme/js/smooth_scrolling.js"></script>
 	
 	<!-- Основной стиль страницы (остальные - каждый на своей странице): -->
-		<link rel="stylesheet" type="text/css" href="./theme/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="./../theme/css/main.css"/>
 	
 	<!-- Картинка во вкладке: -->
-		<link rel="icon" type="image/png" href="/theme/images/logo_x64.png">
+		<link rel="icon" type="image/png" href="./../theme/images/logo_x64.png">
 	
 
 
-	<!-- Основной стиль страницы: -->
-		<link rel="stylesheet" type="text/css" href="./theme/css/page_header.css"/>
-		<link rel="stylesheet" type="text/css" href="./theme/css/page_footer.css"/>
+	<!-- Стили элементов: -->
+		<link rel="stylesheet" type="text/css" href="./../theme/css/page_header.css"/>
+		<link rel="stylesheet" type="text/css" href="./../theme/css/page_footer.css"/>
 	
-	<title>Personal page Vlad1777d.</title>
+	<!-- Считаем и, если нужно, запишем данные в куки: -->
+		<script type="text/coffeescript" src="./../theme/js/start.coffee"/></script>
+	
+	<title>Vlad1777d - personal page.</title>
 </head>
 
 
@@ -60,18 +66,6 @@
 </div>
 
 </footer>
-
-
-
-<!-- Для виджета Вконтакте: -->
-<script type="text/javascript" src="//vk.com/js/api/openapi.js?143"></script>
-
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 106272052, {disableExpandChatSound: "1",disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос? Задайте его здесь."});
-</script>
-
 
 </body>
 

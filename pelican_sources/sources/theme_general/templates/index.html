@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+
+{% block head %}
+	{{ super() }}
+	<!-- Стили элементов: -->
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/page_header.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/page_footer.css"/>
+	
+	<!-- Считаем и, если нужно, запишем данные в куки: -->
+		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/start.coffee"/></script>
+	
+	<title>{{ SITENAME }}</title>
+{% endblock head %}
+
+
+
+
+{% block body %}
+<body>
+
+	{% include "page_header.html" %}
+	{% include "page_footer.html" %}
+
+</body>
+{% endblock body %}
+

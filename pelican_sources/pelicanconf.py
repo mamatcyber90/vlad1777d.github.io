@@ -11,7 +11,7 @@ import sys
 
 
 AUTHOR = u'Vladislav'
-SITENAME = u'Личная страница Vlad1777d.'
+SITENAME = u'Vlad1777d - личная страница.'
 SITEURL = ''
 
 
@@ -38,7 +38,7 @@ PLUGINS = ['i18n_subsites']
 #JINJA_EXTENSIONS = ['jinja2.ext.i18n']
 I18N_SUBSITES = {
     'en': {
-        'SITENAME': 'Personal page Vlad1777d.',
+        'SITENAME': 'Vlad1777d - personal page.',
         'DL': 'en'
     }
 }
