@@ -5,7 +5,7 @@ header {
 	margin: 0;
 	left: 0;
 	top: 0;
-	padding-top: 5vh;
+	padding-top: 0;
 	
 	background-image: url('../images/DSC_0054_ships_1080.JPG');
 	background-attachment: local;
@@ -15,40 +15,70 @@ header {
 
 
 
+.main_title {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	/*margin-bottom: 3vh;*/
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	padding-left: 0;
+	padding-right: 0;
+	
+	font-size: 18pt;
+	
+	background-color: hsla(0, 0%, 50%, 0.0);
+	
+	transition-duration: 0.5s;
+}
+.main_title:hover {
+	/*transform: translate(40px, 0);*/
+	background-color: hsla(0, 0%, 50%, 0.2);
+	color: white;
+	background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+
+
+
 .top_panel {
 	display: flex;
-	flex-direction: column;
-	/*justify-content: center;*/
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
 	position: sticky;
 	top: 1vh;
 	margin: 0;
-	align-items: center;
+	/*margin-top: 3vh;*/
+	padding: 0;
+	z-index: 1;
+	
+	background-color: hsla(0, 0%, 50%, 0.2);
+}
+
+
+
+
+.top_panel_button {
+	display: inline-block;
 	padding: 3vmin;
 	
-	background-color: hsla(0, 0%, 50%, 0.3);
-}
-
-
-
-.main_title {
-	display: flex;
+	font-size: 14pt;
 	
-	font-size: 20pt;
+	transition-duration: 0.5s;
 }
-
-
-
-
-.main_menu {
-	display: flex;
-	width: 100%;
+.top_panel_button:hover {
+	color: white;
+	background-color: hsla(0, 0%, 0%, 0.3);
 }
 
 
 
 .text_right_bottom {
 	position: absolute;
-	z-index: 1;
+	z-index: 0;
 	right: 10vw;
 	bottom: 15vh;
 	text-shadow: 0 0 15px rgba(0,0,0,1);
