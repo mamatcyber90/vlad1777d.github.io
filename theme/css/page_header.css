@@ -17,13 +17,13 @@ header {
 
 .main_title {
 	display: flex;
-	justify-content: center;
-	width: 100%;
+	justify-content: flex-start;
+	width: calc(100% - 24vmin); /* Чтобы учесть padding */
 	margin: 0;
 	padding-top: 6vh;
 	padding-bottom: 6vh;
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 12vmin;
+	padding-right: 12vmin;
 	
 	font-size: 18pt;
 	
@@ -44,20 +44,24 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	width: 100%;
+	width: calc(100% - 6vmin);
 	justify-content: space-around;
 	position: relative;
-	top: 1vh;
 	margin: 0;
 	padding: 0;
+	padding-left: 3vmin;
+	padding-right: 3vmin;
 	z-index: 1;
 	
-	background-color: hsla(0, 0%, 50%, 0.2);
+	background-color: hsla(0, 0%, 0%, 0.2);
 	
-	transition-duration: 3s;
+	transition-duration: 2s;
 }
-.sticky {
+.top_panel_sticky {
+	top: 1vh;
 	position: fixed;
+	background-color: hsla(0, 0%, 100%, 0.9);
+	/*background-color: #c9ddf6;*/
 }
 
 
@@ -66,7 +70,10 @@ header {
 .top_panel_button {
 	display: inline-block;
 	position: relative;
-	padding: 3vmin;
+	padding-top: 3vmin;
+	padding-bottom: 3vmin;
+	padding-left: 6vmin;
+	padding-right: 6vmin;
 	
 	font-size: 14pt;
 	
@@ -75,6 +82,11 @@ header {
 .top_panel_button:hover {
 	color: white;
 	background-color: hsla(0, 0%, 0%, 0.3);
+}
+.top_panel_sticky .top_panel_button:hover {
+	/*color: white;*/
+	background-color: hsla(0, 0%, 0%, 0.7);
+	/*background-color: #567192;*/
 }
 
 
@@ -126,7 +138,8 @@ header {
 	border-radius: 0 0 8px 8px;
 }
 .top_panel_submenu a:hover {
-	color: hsl(40, 100%, 40%);
+	color: hsl(208, 100%, 40%);
+	/*background-color:  hsla(0, 0%, 0%, 0.1);*/
 }
 
 
