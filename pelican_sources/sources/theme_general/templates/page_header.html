@@ -1,8 +1,26 @@
 {% block header %}
 <header>
 
-<div class="">
-	{{ TRANSLATE("welcome title", DEFAULT_LANG) }}
+<div class="top_panel">
+	<a class="main_title" href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html">
+	{{ WRITE("welcome title", DEFAULT_LANG) }}
+	</a>
+	
+	<div class="main_menu">
+		<div class="main_menu_button"><a>Кнопка 1
+		</a></div>
+	</div>
+</div>
+
+
+
+
+
+<div class="text_right_bottom">
+	{{ TRANSLATE("Vlad1777d", DEFAULT_LANG) }}
+	<div class="text_right_bottom_little">
+	{{ TRANSLATE("Информация о проектах, загрузки, прочее.", DEFAULT_LANG) }}
+	</div>
 </div>
 
 </header>

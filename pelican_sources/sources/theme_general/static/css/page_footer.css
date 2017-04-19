@@ -16,7 +16,7 @@
 
 
 
-.footer_main_info {
+.footer_main_info { /* Блок с информацией (списком ссылок\телефонов) */
 	display: inline-block;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -51,15 +51,9 @@
 }
 
 
-
-
 .footer_copyright {
 	color: hsl(0, 0%, 17%);
 }
-
-
-
-
 .footer_copyright_2 {
 	color: hsl(0, 0%, 27%);
 }
@@ -67,7 +61,7 @@
 
 
 
-.footer_author {
+.footer_author { /* Подпись с автором в самом конце. */
 	display: -webkit-flex;
 	-webkit-justify-content: center;
 	
@@ -75,7 +69,7 @@
 	justify-content: center;
 	
 	position: relative;
-	margin-top: 4vh;
+	margin-top: 5vh;
 	widht: 100%;
 	
 	color: hsl(0, 0%, 27%);

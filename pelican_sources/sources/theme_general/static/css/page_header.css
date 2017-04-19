@@ -5,8 +5,68 @@ header {
 	margin: 0;
 	left: 0;
 	top: 0;
+	padding-top: 5vh;
 	
 	background-image: url('../images/DSC_0054_ships_1080.JPG');
 	background-attachment: local;
 	background-size: cover;
+}
+
+
+
+
+.top_panel {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	position: sticky;
+	top: 1vh;
+	margin: 0;
+	align-items: center;
+	padding: 3vmin;
+	
+	background-color: hsla(0, 0%, 50%, 0.3);
+}
+
+
+
+.main_title {
+	display: flex;
+	
+	font-size: 20pt;
+}
+
+
+
+
+.main_menu {
+	display: flex;
+	width: 100%;
+}
+
+
+
+.text_right_bottom {
+	position: absolute;
+	z-index: 1;
+	right: 10vw;
+	bottom: 15vh;
+	text-shadow: 0 0 15px rgba(0,0,0,1);
+	/*font-family: sans-serif;*/
+	font-size: 50pt;
+	color: #FFF;    
+	/*cursor: pointer;*/
+}
+.text_right_bottom_little {
+	padding-top: 8pt;
+	
+	font-size: 12pt;
+}
+@media screen and (max-width: 500px) {
+	.text_right_bottom {
+		font-size: 30pt;
+	}
+	.text_right_bottom_little {
+		font-size: 10pt;
+	}
 }
