@@ -8,14 +8,18 @@
 	</a>
 
 
-<div class="top_panel">
-		<div class="top_panel_button"><a>Разработка сайтов
+<div id="top_panel" class="top_panel">
+		<div class="top_panel_button">{% if DEFAULT_LANG == "ru"  %}↴ Мои проекты: {% else %}My projects{% endif %}
+			<div class="top_panel_submenu">
+				<a href="#">◰ Glass Themes
+				</a>
+				<a href="#">♫ Твои обереги
+				</a>
+			</div>
+		</div>
+		<div class="top_panel_button"><a>{% if DEFAULT_LANG == "ru"  %}Разработка сайтов{% else %}Web developing{% endif %}
 		</a></div>
-		<div class="top_panel_button"><a>Твои обереги
-		</a></div>
-		<div class="top_panel_button"><a>Glass Themes
-		</a></div>
-		<div class="top_panel_button"><a>Другие проекты
+		<div class="top_panel_button"><a>Обо мне
 		</a></div>
 		<div class="top_panel_button"><a>Пожертвования
 		</a></div>

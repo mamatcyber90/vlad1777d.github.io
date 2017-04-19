@@ -30,6 +30,9 @@
 	
 	<!-- Считаем и, если нужно, запишем данные в куки: -->
 		<script type="text/coffeescript" src="./../theme/js/start.coffee"></script>
+		<!-- import jQuery -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/coffeescript" src="./../theme/js/sticky_panel.coffee"></script>
 	
 	<title>Vlad1777d - personal page.</title>
 </head>
@@ -46,14 +49,16 @@
 	</a>
 
 
-<div class="top_panel">
-		<div class="top_panel_button"><a>Разработка сайтов
-		</a></div>
-		<div class="top_panel_button"><a>Твои обереги
-		</a></div>
-		<div class="top_panel_button"><a>Glass Themes
-		</a></div>
-		<div class="top_panel_button"><a>Другие проекты
+<div id="top_panel" class="top_panel">
+		<div class="top_panel_button">My projects			<div class="top_panel_submenu">
+				<a href="#">◰ Glass Themes
+				</a>
+				<a href="#">♫ Твои обереги
+				</a>
+			</div>
+		</div>
+		<div class="top_panel_button"><a>Web developing		</a></div>
+		<div class="top_panel_button"><a>Обо мне
 		</a></div>
 		<div class="top_panel_button"><a>Пожертвования
 		</a></div>
