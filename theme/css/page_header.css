@@ -18,12 +18,12 @@ header {
 .main_title {
 	display: flex;
 	justify-content: flex-start;
-	width: calc(100% - 24vmin); /* Чтобы учесть padding и значки языка ( - 32pt - 2vmin) */
+	width: calc(100% - 12vmin - 15vmin); /* Чтобы учесть padding и значки языка ( - 32pt - 2vmin) */
 	margin: 0;
 	padding-top: 6vh;
 	padding-bottom: 6vh;
 	padding-left: 12vmin;
-	padding-right: 12vmin;
+	padding-right: 15vmin;
 	
 	font-size: 18pt;
 	
@@ -44,18 +44,18 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	width: calc(100% - 6vmin);
+	width: calc(100% - 12vmin);
 	justify-content: space-around;
 	position: relative;
 	margin: 0;
 	padding: 0;
-	padding-left: 3vmin;
-	padding-right: 3vmin;
+	padding-left: 6vmin;
+	padding-right: 6vmin;
 	z-index: 2;
 	
 	background-color: hsla(0, 0%, 0%, 0.2);
 	
-	transition-duration: 2s;
+	transition-duration: 0.5s;
 }
 .top_panel_sticky {
 	top: 0vh;
@@ -154,7 +154,7 @@ header {
 	right: 0vmin;
 	padding-top: 3vmin;
 	padding-right: 1vmin;
-	padding-left: 3vmin;
+	padding-left: 12vmin;
 	height: 12vmin;
 	z-index: 1;
 }
@@ -166,7 +166,7 @@ header {
 	background-size: 100% 100%;
 	box-shadow: 0 0 3pt 0px hsla(0, 0%, 0%, 0.8), inset 0 0 16pt 0px hsla(0, 0%, 0%, 0.8);
 	
-	transition-duration: 0.5s;
+	transition-duration: 0.6s;
 }
 .russian_button {
 	background-image: url('../images/flag_russia.svg');

@@ -4,12 +4,17 @@
 
 
 	<a class="main_title" href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html">
-		{{ WRITE("welcome title", DEFAULT_LANG) }}
+		{% if DEFAULT_LANG == "ru"  %}Добро пожаловать на личную страницу Vlad1777d.
+		{% else %}Welcome to the personal page of Vlad1777d.
+		{% endif %}
 	</a>
 
 
 <div id="top_panel" class="top_panel"><!-- Про запас символы: ⇣ ↴  -->
-		<div class="top_panel_button">{% if DEFAULT_LANG == "ru"  %}⇣ Мои проекты: {% else %}My projects{% endif %}
+		<div class="top_panel_button">
+			{% if DEFAULT_LANG == "ru"  %}⇣ Мои проекты: 
+			{% else %}⇣ My projects:
+			{% endif %}
 			<div class="top_panel_submenu">
 				<a href="#">◰ Glass Themes
 				</a>
@@ -17,11 +22,20 @@
 				</a>
 			</div>
 		</div>
-		<div class="top_panel_button"><a>{% if DEFAULT_LANG == "ru"  %}Разработка сайтов{% else %}Web developing{% endif %}
+		<div class="top_panel_button"><a>
+			{% if DEFAULT_LANG == "ru"  %}Создание сайтов
+			{% else %}Web developing
+			{% endif %}
 		</a></div>
-		<div class="top_panel_button"><a>Обо мне
+		<div class="top_panel_button"><a>
+			{% if DEFAULT_LANG == "ru"  %}Обо мне
+			{% else %}About me
+			{% endif %}
 		</a></div>
-		<div class="top_panel_button"><a>Пожертвования
+		<div class="top_panel_button"><a>
+			{% if DEFAULT_LANG == "ru"  %}Поддержать
+			{% else %}Contribute
+			{% endif %}
 		</a></div>
 </div>
 
@@ -39,9 +53,11 @@
 
 
 <div class="text_right_bottom">
-	{{ TRANSLATE("Vlad1777d", DEFAULT_LANG) }}
+	Vlad1777d
 	<div class="text_right_bottom_little">
-	{{ TRANSLATE("Информация о проектах, загрузки, прочее.", DEFAULT_LANG) }}
+	{% if DEFAULT_LANG == "ru"  %}Информация о проектах, загрузки, прочее.
+	{% else %}Information about projects, downloads, etc.
+	{% endif %}
 	</div>
 </div>
 
