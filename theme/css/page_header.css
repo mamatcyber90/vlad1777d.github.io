@@ -18,7 +18,7 @@ header {
 .main_title {
 	display: flex;
 	justify-content: flex-start;
-	width: calc(100% - 24vmin); /* Чтобы учесть padding */
+	width: calc(100% - 24vmin); /* Чтобы учесть padding и значки языка ( - 32pt - 2vmin) */
 	margin: 0;
 	padding-top: 6vh;
 	padding-bottom: 6vh;
@@ -51,14 +51,14 @@ header {
 	padding: 0;
 	padding-left: 3vmin;
 	padding-right: 3vmin;
-	z-index: 1;
+	z-index: 2;
 	
 	background-color: hsla(0, 0%, 0%, 0.2);
 	
 	transition-duration: 2s;
 }
 .top_panel_sticky {
-	top: 1vh;
+	top: 0vh;
 	position: fixed;
 	background-color: hsla(0, 0%, 100%, 0.9);
 	/*background-color: #c9ddf6;*/
@@ -101,7 +101,7 @@ header {
 	margin-top: 0%;
 	min-width: 120%;
 	width: auto;
-	z-index: 2;
+	z-index: 3;
 	
 	color: black;
 	border-radius: 8px;
@@ -140,6 +140,44 @@ header {
 .top_panel_submenu a:hover {
 	color: hsl(208, 100%, 40%);
 	/*background-color:  hsla(0, 0%, 0%, 0.1);*/
+}
+
+
+
+
+.language_switcher {
+	display: block;
+	position: absolute;
+	top: 3vmin;
+	right: 1vmin;
+	height: 9vmin;
+	z-index: 1;
+}
+.language_button {
+	display: block;
+	width: 32pt;
+	height: 18pt;
+	
+	background-size: 100% 100%;
+	box-shadow: 0 0 3pt 0px hsla(0, 0%, 0%, 0.8);
+	
+	transition-duration: 0.5s;
+}
+.russian_button {
+	background-image: url('../images/flag_russia.svg');
+	
+}
+.english_button {
+	background-image: url('../images/flag_usa.svg');
+}
+.language_button_separator {
+	display: block;
+	width: 32pt;
+	height: 9pt;
+}
+.language_button:hover {
+	box-shadow: 0 0 9pt 0px hsla(0, 0%, 0%, 1);
+	/*transform: translate(-10%, 0);*/
 }
 
 
