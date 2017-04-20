@@ -148,9 +148,14 @@ header {
 .language_switcher {
 	display: block;
 	position: absolute;
-	top: 3vmin;
-	right: 1vmin;
-	height: 9vmin;
+	/*top: 3vmin;
+	right: 1vmin;*/
+	top: 0vmin;
+	right: 0vmin;
+	padding-top: 3vmin;
+	padding-right: 1vmin;
+	padding-left: 3vmin;
+	height: 12vmin;
 	z-index: 1;
 }
 .language_button {
