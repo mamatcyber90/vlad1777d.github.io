@@ -20,7 +20,7 @@ PATH = 'sources'
 STATIC_PATHS = ['data', 'images']  # будут внутри папки PATH
 ARTICLE_PATHS = ['texts']
 THEME = join(PATH, 'theme_general')
-DIRECT_TEMPLATES = ['index']  # здесь написать имена тех шаблонов, которые будут отрендерены
+DIRECT_TEMPLATES = ['index', 'page_glass_themes']  # здесь написать имена тех шаблонов, которые будут отрендерены
 OUTPUT_PATH = '../'
 DELETE_OUTPUT_DIRECTORY = True
 

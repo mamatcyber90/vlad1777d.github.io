@@ -5,9 +5,9 @@
 {% block head %}
 	{{ super() }}
 	<!-- Стили элементов: -->
-		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/page_header.css"/>
-		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/page_content.css"/>
-		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/page_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_header.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_content.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_footer.css"/>
 	
 	<!-- Считаем и, если нужно, запишем данные в куки: -->
 		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/start.coffee"></script>
@@ -23,9 +23,12 @@
 
 {% block body %}
 	
-	{% include "page_header.html" %}
-	{% include "page_content.html" %}
-	{# {% include "bubbles.html" %} #}
+	{% include "block_header.html" %}
+	
+	{% block content %}
+		{% include "block_news.html" %}
+	{% endblock content %}
+	
 	{{ super() }}
 	
 {% endblock body %}

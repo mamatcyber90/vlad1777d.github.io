@@ -16,7 +16,13 @@
 			{% else %}⇣ My projects:
 			{% endif %}
 			<div class="top_panel_submenu">
-				<a href="#">◰ Glass Themes
+				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html#block_content">
+				{% if DEFAULT_LANG == "ru"  %}Новости 
+				{% else %}News
+				{% endif %}
+				</a>
+				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_glass_themes.html#block_content">
+				◰ Glass Themes
 				</a>
 				<a href="#">♫ Твои обереги
 				</a>

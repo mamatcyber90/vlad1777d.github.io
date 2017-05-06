@@ -1,4 +1,7 @@
-.page_content {
+/* For content block in all pages.
+*/
+
+.block_content {
 	display: block;
 	width: 100%;
 	min-height: 30vh;
