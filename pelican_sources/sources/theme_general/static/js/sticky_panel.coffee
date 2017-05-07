@@ -4,7 +4,9 @@
 top_panel = document.getElementById('top_panel')
 top_panel_current_position = top_panel.getBoundingClientRect().top + window.pageYOffset
 # (относительно начала страницы)
-top_panel.classList.add ( 'top_panel_sticky' )
+
+if document.location.hash != ""
+	top_panel.classList.add ( 'top_panel_sticky' )
 # (чтобы не было глюков при новой загрузке страницы и хэша)
 
 

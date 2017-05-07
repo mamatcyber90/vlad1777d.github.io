@@ -1,0 +1,91 @@
+{% extends "index.html" %}
+
+
+{% block content %}
+<section id="block_content" class="block_content">
+
+
+<h1>
+	{% if DEFAULT_LANG == "ru"  %}Другое программное обеспечение 
+	{% else %}Other software
+	{% endif %}
+</h1>
+
+
+<div>
+Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" target="_blank">
+	https://github.com/vlad1777d/Omega_Chess_Genie
+	{% if DEFAULT_LANG == "ru"  %}(ссылка в новой вкладке)
+	{% else %}(link in new tab)
+	{% endif %}
+</a>
+
+</br>
+</br>
+{% if DEFAULT_LANG == "ru"  %}
+	Пишу в качестве учебного проекта для познания графической библиотеки GTK, языка Genie.
+{% else %}
+	I write it as a study project for learning graphic library GTK and Genie language.
+{% endif %}
+</div>
+
+
+<div>
+</br>
+</br>
+{% if DEFAULT_LANG == "ru"  %}
+	В ходе написания "Omega Chess Genie" встретился с ошибками компилятора,
+	поэтому принял решения поправить его.
+	Мой вклад в развитие Genie:
+{% else %}
+	While writing "Omega Chess Genie" I met with errors in compiler,
+	so I decided to fix them.
+	My contrubutions to Genie:
+{% endif %}
+
+<ul>
+	<li>
+		{% if DEFAULT_LANG == "ru"  %}
+			Прерывание сбоки в случае однострочного комментария в конце блока:
+		{% else %}
+			Comments at the end of blocks break compilation:
+		{% endif %}
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=611085" target="_blank">
+			https://bugzilla.gnome.org/show_bug.cgi?id=611085
+		</a>
+	</li>
+	<li>
+		{% if DEFAULT_LANG == "ru"  %}
+			Добавить возможность писать значения перечислений (enums) через запятую:
+		{% else %}
+			Add possibility to write enumeration values into one line separated by comma:
+		{% endif %}
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=776833" target="_blank"">
+			https://bugzilla.gnome.org/show_bug.cgi?id=776833
+		</a>
+	</li>
+	<li>
+		{% if DEFAULT_LANG == "ru"  %}
+			Более последовательный синтаксис циклов "for", добавлена возможность автоматического анализа направления:
+		{% else %}
+			Making for loops syntax more consistent, added ability to analyse direction automatically:
+		{% endif %}
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=781966" target="_blank">
+			https://bugzilla.gnome.org/show_bug.cgi?id=781966
+		</a>
+	</li>
+	<li>
+		{% if DEFAULT_LANG == "ru"  %}
+			Добавлена возможность задавать методы перечислениям (enums):
+		{% else %}
+			Added ability to define methods in enums:
+		{% endif %}
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=776835" target="_blank">
+			https://bugzilla.gnome.org/show_bug.cgi?id=776835
+		</a>
+	</li>
+</ul>
+</div>
+
+</section>
+{% endblock content %}

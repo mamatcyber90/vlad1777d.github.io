@@ -3,8 +3,29 @@
 
 .block_content {
 	display: block;
-	width: 100%;
+	width: calc(100% - 20pt);
 	min-height: 30vh;
+	padding-top: 20pt;
+	padding-bottom: 10pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
 	
 	background-color: hsl(0, 0%, 40%);
+}
+
+
+.block_content ul {
+}
+.block_content ul li {
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+.block_content ul li:nth-child(even) {
+	/*color: hsl(215, 0%, 20%);*/
+}
+.block_content ul li a {
+	color: hsl(208, 100%, 66%);
+}
+.block_content ul li:nth-child(even) a {
+	color: hsl(215, 100%, 60%);
 }

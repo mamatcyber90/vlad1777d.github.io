@@ -1,10 +1,13 @@
 #top_panel_current_position = $('#top_panel').offset().top  # относительно начала страницы к версии скрипта с jQuery
 
-#top_panel.classList.remove ( 'top_panel_sticky' )  # чтобы правильно посчитать
+
 top_panel = document.getElementById('top_panel')
 top_panel_current_position = top_panel.getBoundingClientRect().top + window.pageYOffset
 # (относительно начала страницы)
-top_panel.classList.add ( 'top_panel_sticky' )  # чтобы не было глюков при новой загрузке страницы и хэша
+
+if document.location.hash != ""
+	top_panel.classList.add ( 'top_panel_sticky' )
+# (чтобы не было глюков при новой загрузке страницы и хэша)
 
 
 ###change_panel = () ->  # версия с jQuery
