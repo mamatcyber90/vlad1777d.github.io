@@ -5,11 +5,11 @@
 <section id="block_content" class="block_content">
 
 
-<h1>
+<center><h1>
 	{% if DEFAULT_LANG == "ru"  %}Другое программное обеспечение 
 	{% else %}Other software
 	{% endif %}
-</h1>
+</h1></center>
 
 
 <div>
@@ -31,8 +31,6 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 
 
 <div>
-</br>
-</br>
 {% if DEFAULT_LANG == "ru"  %}
 	В ходе написания "Omega Chess Genie" встретился с ошибками компилятора,
 	поэтому принял решения поправить его.
@@ -52,6 +50,9 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 		{% endif %}
 		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=611085" target="_blank">
 			https://bugzilla.gnome.org/show_bug.cgi?id=611085
+			{% if DEFAULT_LANG == "ru"  %}(ссылка в новой вкладке)
+			{% else %}(link in new tab)
+			{% endif %}
 		</a>
 	</li>
 	<li>
@@ -62,16 +63,22 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 		{% endif %}
 		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=776833" target="_blank"">
 			https://bugzilla.gnome.org/show_bug.cgi?id=776833
+			{% if DEFAULT_LANG == "ru"  %}(ссылка в новой вкладке)
+			{% else %}(link in new tab)
+			{% endif %}
 		</a>
 	</li>
 	<li>
 		{% if DEFAULT_LANG == "ru"  %}
-			Более последовательный синтаксис циклов "for", добавлена возможность автоматического анализа направления:
+			Более естественный синтаксис циклов "for", возможность автоанализа направления:
 		{% else %}
 			Making for loops syntax more consistent, added ability to analyse direction automatically:
 		{% endif %}
 		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=781966" target="_blank">
 			https://bugzilla.gnome.org/show_bug.cgi?id=781966
+			{% if DEFAULT_LANG == "ru"  %}(ссылка в новой вкладке)
+			{% else %}(link in new tab)
+			{% endif %}
 		</a>
 	</li>
 	<li>
@@ -82,6 +89,9 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 		{% endif %}
 		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=776835" target="_blank">
 			https://bugzilla.gnome.org/show_bug.cgi?id=776835
+			{% if DEFAULT_LANG == "ru"  %}(ссылка в новой вкладке)
+			{% else %}(link in new tab)
+			{% endif %}
 		</a>
 	</li>
 </ul>

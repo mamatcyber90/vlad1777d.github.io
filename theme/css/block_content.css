@@ -3,18 +3,38 @@
 
 .block_content {
 	display: block;
-	width: calc(100% - 20pt);
+	width: 100%;
 	min-height: 30vh;
-	padding-top: 20pt;
-	padding-bottom: 10pt;
-	padding-left: 10pt;
-	padding-right: 10pt;
+	padding-top: 1em;
+	/*padding-bottom: 0;*/
+	/*padding-left: 10pt;
+	padding-right: 10pt;*/
 	
 	background-color: hsl(0, 0%, 40%);
+	/*color: hsl(0, 0%, 30%);*/
+}
+
+
+.block_content div {
+	padding: 4em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	/*margin: 1em;*/
+}
+.block_content div:nth-child(odd) {
+	background-color: hsl(0, 0%, 20%);
+	color: hsl(0, 0%, 50%);
+}
+
+
+.block_content a {
+	color: hsl(208, 100%, 66%);
 }
 
 
 .block_content ul {
+	/*padding-bottom: 0;*/
+	margin-bottom: 0;
 }
 .block_content ul li {
 	padding-top: 0.3em;
