@@ -4,16 +4,19 @@
 
 {% block head %}
 	{{ super() }}
+	
 	<!-- Стили элементов: -->
 		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_header.css"/>
 		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_content.css"/>
 		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_footer.css"/>
 	
 	<!-- Считаем и, если нужно, запишем данные в куки: -->
+		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/cookies.coffee"></script>
+		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/sticky_panel.coffee"></script>
 		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/start.coffee"></script>
 		<!-- import jQuery -->
 			<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/sticky_panel.coffee"></script>
+		
 	
 	<title>{{ SITENAME }}</title>
 {% endblock head %}
@@ -30,6 +33,9 @@
 	{% endblock content %}
 	
 	{{ super() }}
+	
+	{% block late_scripts %}
+	{% endblock late_scripts %}
 	
 {% endblock body %}
 

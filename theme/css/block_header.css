@@ -60,7 +60,7 @@ header {
 .top_panel_sticky {
 	top: 0vh;
 	position: fixed;
-	background-color: hsla(0, 0%, 100%, 0.9);
+	background-color: hsla(0, 0%, 100%, 1);
 	box-shadow: 0 0 25px 0px black;
 }
 

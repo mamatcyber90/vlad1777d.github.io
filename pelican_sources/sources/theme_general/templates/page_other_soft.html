@@ -1,6 +1,8 @@
 {% extends "index.html" %}
 
 
+
+
 {% block content %}
 <section id="block_content" class="block_content">
 
@@ -13,12 +15,21 @@
 
 
 <div>
-Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" target="_blank">
-	https://github.com/vlad1777d/Omega_Chess_Genie
-	{% if DEFAULT_LANG == "ru"  %}(ссылка в новой вкладке)
-	{% else %}(link in new tab)
-	{% endif %}
-</a>
+<h2>Omega Chess Genie.</h2>
+{% if DEFAULT_LANG == "ru"  %}	
+	Игра в нестандартные шахматы, написанная на Genie.</br>
+	Код на гитхабе:
+	<a href="https://github.com/vlad1777d/Omega_Chess_Genie" target="_blank">
+		https://github.com/vlad1777d/Omega_Chess_Genie (ссылка в новой вкладке)
+	</a>
+{% else %}	
+	Non-standard chess game, written in Genie.</br>
+	Code on github:
+	<a href="https://github.com/vlad1777d/Omega_Chess_Genie" target="_blank">
+		https://github.com/vlad1777d/Omega_Chess_Genie (link in new tab)
+	</a>
+{% endif %}
+
 
 </br>
 </br>
@@ -31,6 +42,7 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 
 
 <div>
+<h2>Genie.</h2>
 {% if DEFAULT_LANG == "ru"  %}
 	В ходе написания "Omega Chess Genie" встретился с ошибками компилятора,
 	поэтому принял решения поправить его.
@@ -97,5 +109,42 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 </ul>
 </div>
 
+
+<div>
+<h2>OASIS.</h2>
+{% if DEFAULT_LANG == "ru"  %}
+	OASIS - игра от первого лица на UPBGE - измененном движке BGE.</br></br>
+	Код на гитхабе:
+	<a href="https://github.com/vlad1777d/Oasis" target="_blank">
+		https://github.com/vlad1777d/Oasis
+	</a></br>
+	Группа вконтакте:
+	<a href="https://vk.com/open_oasis" target="_blank">
+		https://vk.com/open_oasis (ссылка в новой вкладке)
+	</a></br>
+	Готовая система динамического размещения травы:</br></br>
+	<iframe width="355" height="200" src="https://www.youtube.com/embed/49hS_4n1G4k" frameborder="0" allowfullscreen></iframe>
+{% else %}
+	OASIS game from first person, created using UPBGE - modified BGE (Blender Game Engine).</br></br>
+	Code on github:
+	<a href="https://github.com/vlad1777d/Oasis" target="_blank">
+		https://github.com/vlad1777d/Oasis (link in new tab)
+	</a></br>
+	Group on vk.com:
+	<a href="https://vk.com/open_oasis" target="_blank">
+		https://vk.com/open_oasis (link in new tab)
+	</a></br>
+	Ready system of dynamic grass placing:</br></br>
+	<iframe width="355" height="200" src="https://www.youtube.com/embed/49hS_4n1G4k" frameborder="0" allowfullscreen></iframe>
+{% endif %}
+</div>
+
 </section>
 {% endblock content %}
+
+
+
+
+{% block late_scripts %}
+	<script type="text/coffeescript" src="{{ root_relative }}/theme/js/move_to_content.coffee"></script>
+{% endblock late_scripts %}

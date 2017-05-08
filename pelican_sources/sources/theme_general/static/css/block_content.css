@@ -5,13 +5,19 @@
 	display: block;
 	width: 100%;
 	min-height: 30vh;
-	padding-top: 1em;
+	padding-top: /*calc(6vmin + 14pt + 3vmin)*/ 2em;
 	/*padding-bottom: 0;*/
 	/*padding-left: 10pt;
 	padding-right: 10pt;*/
 	
 	background-color: hsl(0, 0%, 40%);
 	/*color: hsl(0, 0%, 30%);*/
+}
+
+
+.block_content h1 {
+	font-size: 24pt;
+	margin-bottom: 0.2em;
 }
 
 
@@ -22,6 +28,8 @@
 	/*margin: 1em;*/
 }
 .block_content div:nth-child(odd) {
+	text-align: right;
+	
 	background-color: hsl(0, 0%, 20%);
 	color: hsl(0, 0%, 50%);
 }

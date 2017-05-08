@@ -23,16 +23,19 @@
 	
 
 
+	
 	<!-- Стили элементов: -->
 		<link rel="stylesheet" type="text/css" href="./../theme/css/block_header.css"/>
 		<link rel="stylesheet" type="text/css" href="./../theme/css/block_content.css"/>
 		<link rel="stylesheet" type="text/css" href="./../theme/css/block_footer.css"/>
 	
 	<!-- Считаем и, если нужно, запишем данные в куки: -->
+		<script type="text/coffeescript" src="./../theme/js/cookies.coffee"></script>
+		<script type="text/coffeescript" src="./../theme/js/sticky_panel.coffee"></script>
 		<script type="text/coffeescript" src="./../theme/js/start.coffee"></script>
 		<!-- import jQuery -->
 			<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-		<script type="text/coffeescript" src="./../theme/js/sticky_panel.coffee"></script>
+		
 	
 	<title>Vlad1777d - personal page.</title>
 </head>
@@ -53,17 +56,18 @@ Welcome to the personal page of Vlad1777d.
 		<div class="top_panel_button">
 ⇣ My projects:
 			<div class="top_panel_submenu">
-				<a href="./../en/index.html#block_content">
+				<!-- <a href="./../en/index.html" onclick="add_scrolling_on_load">
 					News
-				</a>
-				<a href="./../en/page_glass_themes.html#block_content">
+				</a> -->
+				<a href="./../en/page_glass_themes.html">
 					◰ Glass Themes
 				</a>
 				<a href="#">
-					♫ Твои обереги
+					♫
+Your Averters
 				</a>
-				<a href="./../en/page_other_soft.html#block_content">
-					Other soft
+				<a href="./../en/page_other_soft.html" onclick="write_scrolling_requiest_to_cookies">
+					Other software
 				</a>
 			</div>
 		</div>
@@ -109,10 +113,14 @@ Other software
 
 
 <div>
-Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" target="_blank">
-	https://github.com/vlad1777d/Omega_Chess_Genie
-(link in new tab)
-</a>
+<h2>Omega Chess Genie.</h2>
+	
+	Non-standard chess game, written in Genie.</br>
+	Code on github:
+	<a href="https://github.com/vlad1777d/Omega_Chess_Genie" target="_blank">
+		https://github.com/vlad1777d/Omega_Chess_Genie (link in new tab)
+	</a>
+
 
 </br>
 </br>
@@ -121,6 +129,7 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 
 
 <div>
+<h2>Genie.</h2>
 	While writing "Omega Chess Genie" I met with errors in compiler,
 	so I decided to fix them.
 	My contrubutions to Genie:
@@ -155,6 +164,22 @@ Omega Chess Genie: <a href="https://github.com/vlad1777d/Omega_Chess_Genie" targ
 		</a>
 	</li>
 </ul>
+</div>
+
+
+<div>
+<h2>OASIS.</h2>
+	OASIS game from first person, created using UPBGE - modified BGE (Blender Game Engine).</br></br>
+	Code on github:
+	<a href="https://github.com/vlad1777d/Oasis" target="_blank">
+		https://github.com/vlad1777d/Oasis (link in new tab)
+	</a></br>
+	Group on vk.com:
+	<a href="https://vk.com/open_oasis" target="_blank">
+		https://vk.com/open_oasis (link in new tab)
+	</a></br>
+	Ready system of dynamic grass placing:</br></br>
+	<iframe width="355" height="200" src="https://www.youtube.com/embed/49hS_4n1G4k" frameborder="0" allowfullscreen></iframe>
 </div>
 
 </section>
@@ -208,6 +233,8 @@ Best regards, Vladislav.
 </footer>
 	
 
+	
+	<script type="text/coffeescript" src="./../theme/js/move_to_content.coffee"></script>
 	
 </body>
 

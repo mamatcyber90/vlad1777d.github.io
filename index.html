@@ -23,16 +23,19 @@
 	
 
 
+	
 	<!-- Стили элементов: -->
 		<link rel="stylesheet" type="text/css" href="././theme/css/block_header.css"/>
 		<link rel="stylesheet" type="text/css" href="././theme/css/block_content.css"/>
 		<link rel="stylesheet" type="text/css" href="././theme/css/block_footer.css"/>
 	
 	<!-- Считаем и, если нужно, запишем данные в куки: -->
+		<script type="text/coffeescript" src="././theme/js/cookies.coffee"></script>
+		<script type="text/coffeescript" src="././theme/js/sticky_panel.coffee"></script>
 		<script type="text/coffeescript" src="././theme/js/start.coffee"></script>
 		<!-- import jQuery -->
 			<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-		<script type="text/coffeescript" src="././theme/js/sticky_panel.coffee"></script>
+		
 	
 	<title>Vlad1777d - личная страница.</title>
 </head>
@@ -53,16 +56,17 @@
 		<div class="top_panel_button">
 ⇣ Мои проекты: 
 			<div class="top_panel_submenu">
-				<a href="././index.html#block_content">
+				<!-- <a href="././index.html" onclick="add_scrolling_on_load">
 					Новости 
-				</a>
-				<a href="././page_glass_themes.html#block_content">
+				</a> -->
+				<a href="././page_glass_themes.html">
 					◰ Glass Themes
 				</a>
 				<a href="#">
-					♫ Твои обереги
+					♫
+Твои обереги
 				</a>
-				<a href="././page_other_soft.html#block_content">
+				<a href="././page_other_soft.html" onclick="write_scrolling_requiest_to_cookies">
 					Другое ПО 
 				</a>
 			</div>
@@ -153,6 +157,7 @@
 </footer>
 	
 
+	
 	
 </body>
 

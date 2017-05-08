@@ -16,24 +16,27 @@
 			{% else %}⇣ My projects:
 			{% endif %}
 			<div class="top_panel_submenu">
-				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html#block_content">
+				<!-- <a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html" onclick="add_scrolling_on_load">
 				{% if DEFAULT_LANG == "ru"  %}
 					Новости 
 				{% else %}
 					News
 				{% endif %}
-				</a>
-				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_glass_themes.html#block_content">
+				</a> -->
+				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_glass_themes.html">
 					◰ Glass Themes
 				</a>
 				<a href="#">
-					♫ Твои обереги
+					♫
+					{% if DEFAULT_LANG == "ru"  %}Твои обереги
+					{% else %}Your Averters
+					{% endif %}
 				</a>
-				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_other_soft.html#block_content">
+				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_other_soft.html" onclick="write_scrolling_requiest_to_cookies">
 				{% if DEFAULT_LANG == "ru"  %}
 					Другое ПО 
 				{% else %}
-					Other soft
+					Other software
 				{% endif %}
 				</a>
 			</div>
