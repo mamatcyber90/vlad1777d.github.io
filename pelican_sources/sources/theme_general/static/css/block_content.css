@@ -5,19 +5,19 @@
 	display: block;
 	width: 100%;
 	min-height: 30vh;
-	padding-top: /*calc(6vmin + 14pt + 3vmin)*/ 2em;
+	padding-top: /*calc(6vmin + 14pt + 3vmin)*/ 4em;
 	/*padding-bottom: 0;*/
 	/*padding-left: 10pt;
 	padding-right: 10pt;*/
 	
-	background-color: hsl(0, 0%, 40%);
+	background-color: hsl(215, 10%, 40%);
 	/*color: hsl(0, 0%, 30%);*/
 }
 
 
 .block_content h1 {
 	font-size: 24pt;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.8em;
 }
 
 
@@ -30,8 +30,8 @@
 .block_content div:nth-child(odd) {
 	text-align: right;
 	
-	background-color: hsl(0, 0%, 20%);
-	color: hsl(0, 0%, 50%);
+	background-color: hsl(215, 10%, 20%);
+	color: hsl(215, 10%, 50%);
 }
 
 

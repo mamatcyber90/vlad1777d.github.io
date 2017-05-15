@@ -4,9 +4,10 @@
  
  
 .top_panel {
-	background-color: hsla(0, 0%, 100%, 1);
+	background-color: hsla(215, 10%, 75%, 1);
 	box-shadow: 0 0 25px 0px black;
 }
 .top_panel_button:hover {
 	background-color: hsla(0, 0%, 0%, 0.7);
+	color: hsl(58, 80%, 70%);
 }
