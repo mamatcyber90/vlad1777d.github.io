@@ -3,6 +3,8 @@
 
 
 
+
+
 	<a class="main_title" href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html">
 		{% if DEFAULT_LANG == "ru"  %}Добро пожаловать на личную страницу Vlad1777d.
 		{% else %}Welcome to the personal page of Vlad1777d.
@@ -10,53 +12,11 @@
 	</a>
 
 
-<div id="top_panel" class="top_panel"><!-- Про запас символы: ⇣ ↴  -->
-		<div class="top_panel_button">
-			{% if DEFAULT_LANG == "ru"  %}⇣ Мои проекты: 
-			{% else %}⇣ My projects:
-			{% endif %}
-			<div class="top_panel_submenu">
-				<!-- <a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html" onclick="add_scrolling_on_load">
-				{% if DEFAULT_LANG == "ru"  %}
-					Новости 
-				{% else %}
-					News
-				{% endif %}
-				</a> -->
-				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_glass_themes.html">
-					◰ Glass Themes
-				</a>
-				<a href="#">
-					♫
-					{% if DEFAULT_LANG == "ru"  %}Твои обереги
-					{% else %}Your Averters
-					{% endif %}
-				</a>
-				<a href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_other_soft.html" onclick="write_scrolling_requiest_to_cookies">
-				{% if DEFAULT_LANG == "ru"  %}
-					Другое ПО 
-				{% else %}
-					Other software
-				{% endif %}
-				</a>
-			</div>
-		</div>
-		<div class="top_panel_button"><a>
-			{% if DEFAULT_LANG == "ru"  %}Создание сайтов
-			{% else %}Web developing
-			{% endif %}
-		</a></div>
-		<div class="top_panel_button"><a>
-			{% if DEFAULT_LANG == "ru"  %}Обо мне
-			{% else %}About me
-			{% endif %}
-		</a></div>
-		<div class="top_panel_button"><a>
-			{% if DEFAULT_LANG == "ru"  %}Поддержать
-			{% else %}Contribute
-			{% endif %}
-		</a></div>
-</div>
+
+
+
+{% include "block_top_panel.html" %}
+
 
 
 
@@ -79,6 +39,7 @@
 	{% endif %}
 	</div>
 </div>
+
 
 </header>
 {% endblock header %}

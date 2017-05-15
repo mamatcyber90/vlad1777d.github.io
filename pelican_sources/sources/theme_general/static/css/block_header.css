@@ -84,9 +84,7 @@ header {
 	background-color: hsla(0, 0%, 0%, 0.3);
 }
 .top_panel_sticky .top_panel_button:hover {
-	/*color: white;*/
 	background-color: hsla(0, 0%, 0%, 0.7);
-	/*background-color: #567192;*/
 }
 
 

@@ -37,6 +37,11 @@
 
 .block_content a {
 	color: hsl(208, 100%, 66%);
+	transition-duration: 0.5s;
+}
+.block_content a:hover {
+	color: hsl(208, 100%, 100%);
+	text-shadow: 0 0 3px black;
 }
 
 
@@ -56,4 +61,8 @@
 }
 .block_content ul li:nth-child(even) a {
 	color: hsl(215, 100%, 60%);
+}
+.block_content ul li:nth-child(even) a:hover { /* hack */
+	color: hsl(208, 100%, 100%);
+	text-shadow: 0 0 3px black;
 }
