@@ -30,6 +30,7 @@
 
 .footer_main_info li a {
 	color: hsl(208, 100%, 66%);
+	text-shadow: 0 0 3px black;
 	text-decoration: none;
 	
 	transition-duration: 0.3s;
@@ -39,12 +40,19 @@
 	color: hsl(215, 100%, 60%);
 }
 .footer_main_info li a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	color: white;
+	text-shadow: 0 0 3px black;
 }
 
 
 .footer_info_for_links {
 	color: grey;
+	transition-duration: 0.3s;
+}
+.footer_main_info li a:hover .footer_info_for_links {
+	color: white;
+	text-shadow: 0 0 3px black;
 }
 .footer_phone_number {
 	color: red;

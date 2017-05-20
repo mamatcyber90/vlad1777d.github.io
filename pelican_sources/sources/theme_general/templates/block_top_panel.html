@@ -35,7 +35,9 @@
 		</div>
 		
 		
-		<a class="top_panel_button">
+		<a class="top_panel_button"
+			href="{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page_web_development.html"
+		>
 			{% if DEFAULT_LANG == "ru"  %}Создание сайтов
 			{% else %}Web developing
 			{% endif %}

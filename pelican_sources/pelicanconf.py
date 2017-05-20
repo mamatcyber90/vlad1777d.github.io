@@ -17,11 +17,11 @@ SITEURL = ''
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # сделал по образу и подобию Django
 PATH = 'sources'
-STATIC_PATHS = ['data', 'images']  # будут внутри папки PATH
+STATIC_PATHS = ['data', 'images', 'bootstrap', 'jquery']  # будут внутри папки PATH
 ARTICLE_PATHS = ['texts']
 THEME = join(PATH, 'theme_general')
 DIRECT_TEMPLATES = ['index', 'page_glass_themes',
-					'page_other_soft']
+					'page_other_soft', 'page_web_development']
 					# здесь написать имена тех шаблонов, которые будут включены в постоение
 OUTPUT_PATH = '../'
 DELETE_OUTPUT_DIRECTORY = True

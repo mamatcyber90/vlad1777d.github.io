@@ -5,7 +5,7 @@
 	display: block;
 	width: 100%;
 	min-height: 30vh;
-	padding-top: /*calc(6vmin + 14pt + 3vmin)*/ 4em;
+	padding-top: /*calc(6vmin + 14pt + 3vmin)*/ 6em;
 	/*padding-bottom: 0;*/
 	/*padding-left: 10pt;
 	padding-right: 10pt;*/
@@ -17,7 +17,7 @@
 
 .block_content h1 {
 	font-size: 24pt;
-	margin-bottom: 0.8em;
+	margin-bottom: 1em;
 }
 
 
@@ -37,7 +37,9 @@
 
 .block_content a {
 	color: hsl(208, 100%, 66%);
-	transition-duration: 0.5s;
+	text-shadow: 0 0 3px black;
+	
+	transition-duration: 0.3s;
 }
 .block_content a:hover {
 	color: hsl(208, 100%, 100%);
