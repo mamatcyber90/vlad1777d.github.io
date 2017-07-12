@@ -1,0 +1,84 @@
+{% macro new_carousel_item (header='', text='', image='', address='') %}
+			<div class="carousel-item" data-carousel-href="{{ address }}">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">{{ header }}</h2>
+					<div style="margin-bottom: 0.8em;">{{ text }}</div>
+					<img src="" alt="Image description"
+						data-carousel-src="{{ root_relative }}/theme/images/header_carousel/{{ image }}">
+				</div>
+			</div>
+{% endmacro %}
+
+
+{% block carousel %}
+	<div class="carousel"
+	data-carousel-delay="5000"
+	data-carousel-indicators=""
+	data-carousel-touch-threshold="40%"
+	data-carousel-rubberband-swipe="1.5">
+		<div class="carousel-slider">
+
+			
+			{% set text %}
+				На нашем сайте вы можете в спокойной обстановке ознакомиться с
+				предлагаемыми услугами, получить информацию о используемых технологиях,
+				посмотреть результаты нашей работы.
+				Если у вас возникли какие-то
+				вопросы, вы всегда можете задать их нам используя виджет сообщений
+				вконтакте (справа внизу сайта).
+			{% endset %}
+
+			{{ new_carousel_item ('Будьте как дома.', text, 'be_like_home_with_cat_and_coffee.png') }}
+
+			{% set text %}
+				Сначала мы детально и глубоко изучим задачу, стоящую перед Вами,
+				выявим факторы и силы, влияющие на нее, и подготовим всю необходимую
+				информацию для организации работы по ее решению.
+			{% endset %}
+
+			{{ new_carousel_item ('Изучим вашу задачу.', text, 'learning_your_task.jpg') }}
+
+			{% set text %}
+				Мы тщательно изучаем важные аспекты взаимосвязи стоящей перед вами
+				задачей с общими целями и результатами деятельности Вашего бизнеса, а
+				также определяем, насколько Вы будете способны осуществлять изменения и
+				эффективно решать проблемы конкретным путем; на основе данного анализа
+				предложим вам приемлемые варианты решения задачи.
+			{% endset %}
+
+			{{ new_carousel_item ('Проконсультируем и предложим решение.', text, 'consultation_hands.jpg') }}
+
+			{% set text %}
+				После того, как мы составим техническое задание и договоримся о
+				сроках исполнения, вам нужно будет всего лишь немного подождать, пока мы
+				выполняем для вас работу. Мы позаботимся о том, чтобы решение
+				соответствовало всем вашим требованиям.
+			{% endset %}
+
+			{{ new_carousel_item ('Реализуем ваш проект.', text, 'wait_modern.jpg') }}
+
+			{% set text %}
+				Готовый проект - не последний этап жизни проекта. В мире все течет и
+				изменяется. Мы всей душой хотим, чтобы проект клиента рос и развивался.
+				Чтобы маленький проект становился большим и успешным.
+			{% endset %}
+
+			{{ new_carousel_item ('Поддержим развитие вашего проекта.', text, 'main_1.jpg') }}
+
+			<script>
+				turn_off_carousel = function () {Carousel.carousels[0].pause()};
+				turn_on_carousel = function () {Carousel.carousels[0].play()};
+				var needed_elements = document.getElementsByClassName('carousel-item-text');
+
+				for (var i = 0, length1 = needed_elements.length; i < length1; i++) {
+					needed_elements[i].addEventListener('mouseover', turn_off_carousel);
+					needed_elements[i].addEventListener('mouseout', turn_on_carousel);
+				}
+			</script>
+
+
+		</div>
+	</div> <!-- enddiv carousel -->
+
+
+{% endblock carousel %}

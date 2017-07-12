@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+	{{ super() }}
+	
+	<!-- Стили элементов: -->
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_header.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_content.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block_footer.css"/>
+	
+	<!-- Считаем и, если нужно, запишем данные в куки: -->
+		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/cookies.coffee"></script>
+		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/sticky_panel.coffee"></script>
+		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/start.coffee"></script>
+		<!-- import jQuery -->
+			<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+		
+	
+	<title>{{ SITENAME }}</title>
+{% endblock head %}
+
+
+
+
+{% block body %}
+
+	{% from "shortcuts.html" import root_relative with context %}
+	
+	{% include "block_header.html" %}
+	
+	{% block content %}
+		{% include "page_news.html" %}
+	{% endblock content %}
+	
+	{% include "block_footer.html" %}
+	
+	{% block late_scripts %}
+	{% endblock late_scripts %}
+	
+{% endblock body %}
+

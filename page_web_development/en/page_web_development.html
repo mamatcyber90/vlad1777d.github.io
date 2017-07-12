@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	
+	<meta charset="utf-8" lang="en" />
+
+	<!-- чтобы bootstrap с мобильными устр. работал: -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Картинка во вкладке: -->
+		<link rel="icon" type="image/png" href="./../theme/images/logo_16_bit.svg">
+
+	<!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+		<!-- <script src="./../theme/js/jquery-3.2.1.min.js"></script> -->
+
+	<!-- Bootstrap -->
+		<!-- <link rel="stylesheet" type="text/css" href="./../theme/bootstrap/css/bootstrap.min.css"/> -->
+
+		<!-- <script src="./../theme/bootstrap/js/bootstrap.min.js"></script> -->
+
+	<!-- Компиллятор CoffeeScript: -->
+		<script type="text/javascript" src="./../theme/js/coffeescript_compiler.js"></script>
+
+
+
+	<title>
+Web development
+	</title>
+
+	<!-- Для листателя картинок (карусели): -->
+		<link rel="stylesheet" type="text/css" href="./../theme/css/carousel.min.css"/>
+		<script type="text/javascript" src="./../theme/js/carousel.js"></script>
+
+	<!-- Основной стиль страницы (остальные - каждый на своей странице): -->
+		<link rel="stylesheet" type="text/css" href="./../theme/css/details.css"/>
+
+	<script type="text/javascript" src="./../theme/js/change_background_gradient.js"></script>
+
+</head>
+
+
+<body id="changeable_background_gradient">
+
+
+
+
+	<div class="header_row">
+
+
+		<div class="header___first_line">
+				<a href="./../en/page_web_development.html" class="header___first_line___link">
+					<div class="header___first_line___logo">⠴16 БИТ⠉⡏</div>
+				</a>
+				<div class="header___first_line___phone_number">+7 (923) 410-17-79</div>
+		</div>
+
+
+
+
+		<div class="header___second_line">
+			<div class="header___second_line___text">Создание веб-сервисов и приложений</div>
+
+			<div class="header___language_switcher">
+				<a class="header___language_button header___russian_button" href="./../page_web_development.html"></a>
+				<div class="header___language_button_separator"></div>
+				<a class="header___language_button header___english_button" href="./../en/page_web_development.html"></a>
+			</div>
+		</div>
+
+
+
+		<div class="header___main_menu_row">
+
+			<a href="./../..//en/index.html"
+				class="header___main_menu_button"
+				role="button">
+					<span>↩ Назад</span>
+			</a>
+
+			<a href="#about_us" class="header___main_menu_button" role="button">
+				<span style="display: block; text-align: center;">ⓘ О нас</span>
+			</a>
+
+			<a href="#services" class="header___main_menu_button" role="button">
+				<span>☕ Услуги</span>
+			</a>
+
+			<a href="#work_examples" class="header___main_menu_button" role="button">
+				<span>☑ Примеры работ</span>
+			</a>
+
+		</div>
+
+
+	</div>
+
+
+	<div class="carousel"
+	data-carousel-delay="5000"
+	data-carousel-indicators=""
+	data-carousel-touch-threshold="40%"
+	data-carousel-rubberband-swipe="1.5">
+		<div class="carousel-slider">
+
+			
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">Будьте как дома.</h2>
+					<div style="margin-bottom: 0.8em;">				На нашем сайте вы можете в спокойной обстановке ознакомиться с
+				предлагаемыми услугами, получить информацию о используемых технологиях,
+				посмотреть результаты нашей работы.
+				Если у вас возникли какие-то
+				вопросы, вы всегда можете задать их нам используя виджет сообщений
+				вконтакте (справа внизу сайта).
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="./../theme/images/header_carousel/be_like_home_with_cat_and_coffee.png">
+				</div>
+			</div>
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">Изучим вашу задачу.</h2>
+					<div style="margin-bottom: 0.8em;">				Сначала мы детально и глубоко изучим задачу, стоящую перед Вами,
+				выявим факторы и силы, влияющие на нее, и подготовим всю необходимую
+				информацию для организации работы по ее решению.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="./../theme/images/header_carousel/learning_your_task.jpg">
+				</div>
+			</div>
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">Проконсультируем и предложим решение.</h2>
+					<div style="margin-bottom: 0.8em;">				Мы тщательно изучаем важные аспекты взаимосвязи стоящей перед вами
+				задачей с общими целями и результатами деятельности Вашего бизнеса, а
+				также определяем, насколько Вы будете способны осуществлять изменения и
+				эффективно решать проблемы конкретным путем; на основе данного анализа
+				предложим вам приемлемые варианты решения задачи.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="./../theme/images/header_carousel/consultation_hands.jpg">
+				</div>
+			</div>
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">Реализуем ваш проект.</h2>
+					<div style="margin-bottom: 0.8em;">				После того, как мы составим техническое задание и договоримся о
+				сроках исполнения, вам нужно будет всего лишь немного подождать, пока мы
+				выполняем для вас работу. Мы позаботимся о том, чтобы решение
+				соответствовало всем вашим требованиям.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="./../theme/images/header_carousel/wait_modern.jpg">
+				</div>
+			</div>
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">Поддержим развитие вашего проекта.</h2>
+					<div style="margin-bottom: 0.8em;">				Готовый проект - не последний этап жизни проекта. В мире все течет и
+				изменяется. Мы всей душой хотим, чтобы проект клиента рос и развивался.
+				Чтобы маленький проект становился большим и успешным.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="./../theme/images/header_carousel/main_1.jpg">
+				</div>
+			</div>
+
+
+			<script>
+				turn_off_carousel = function () {Carousel.carousels[0].pause()};
+				turn_on_carousel = function () {Carousel.carousels[0].play()};
+				var needed_elements = document.getElementsByClassName('carousel-item-text');
+
+				for (var i = 0, length1 = needed_elements.length; i < length1; i++) {
+					needed_elements[i].addEventListener('mouseover', turn_off_carousel);
+					needed_elements[i].addEventListener('mouseout', turn_on_carousel);
+				}
+			</script>
+
+
+		</div>
+	</div> <!-- enddiv carousel -->
+
+
+	<div id="services" class="our_services_row">
+		<div class="our_services_header">
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h1 style="text-align: center;">Наши услуги:</h1>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+
+
+
+
+
+
+		<div class="our_services_list">
+
+						<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Создание сайта</h3>
+				<img src="./../theme/images/services/website_creation.jpg"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Быстрое создание одностраничных сайтов</p>
+				<h4 style="text-align: center;">от 5000 руб</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">Заказать
+						</a>
+					</div>
+				</div>
+			</div>
+
+						<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Мобильные приложения</h3>
+				<img src="./../theme/images/services/mobile_apps.png"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Быстрое создание мобильных решений для Android, iOS</p>
+				<h4 style="text-align: center;">от 10000 руб</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">Заказать
+						</a>
+					</div>
+				</div>
+			</div>
+
+						<div class="our_service_plane">
+
+				<h3 style="text-align: center;">СЕО оптимизация</h3>
+				<img src="./../theme/images/services/seo_optimizing.jpg"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Быстрая оптимизация сайта для поисковых систем</p>
+				<h4 style="text-align: center;">от 7000 руб</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">Заказать
+						</a>
+					</div>
+				</div>
+			</div>
+
+						<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Настройка рекламы</h3>
+				<img src="./../theme/images/services/setting_reclame.jpg"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Быстрое создание кампаний Яндекс.Директ и Google.Adwords</p>
+				<h4 style="text-align: center;">от 9000 руб</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">Заказать
+						</a>
+					</div>
+				</div>
+			</div>
+
+						<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Оптимизация и поддрежка</h3>
+				<img src="./../theme/images/services/optimisation_and_support.jpg"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Оптимизация и поддержка существующего проекта</p>
+				<h4 style="text-align: center;">от 5000 руб</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">Заказать
+						</a>
+					</div>
+				</div>
+			</div>
+
+						<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Локализация</h3>
+				<img src="./../theme/images/services/internationalization.png"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Перевод сайтов на другие языки для увеличения целевой аудитории</p>
+				<h4 style="text-align: center;">от 8000 руб</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">Заказать
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+		</div><!-- enddiv our_services_list -->
+	</div> <!-- enddiv our_services_row -->
+	<div id="work_examples" class="work_examples_row">
+
+
+
+
+		<div class="our_services_header">
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h1 style="text-align: center;">Примеры наших работ:</h1>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+
+
+
+
+		<div class="our_services_list">
+
+						<div class="our_service_plane">
+				<h3 style="text-align: center;">Souz Eco</h3>
+				<img src="./../theme/images/example_projects/souz-eco_logo_v2.png"
+					alt="изображение не найдено, сообщите администратору"
+					class="">
+				<p style="text-align: center;">Небольшой одностраничный сайт-визитка для компании по ремонту стиральных машин.</p>
+
+				<a href="https://souz-eco.github.io/" class="our_service_button"
+					role="button" target="_blank">Открыть сайт
+				</a>
+
+			</div>
+
+						<div class="our_service_plane">
+				<h3 style="text-align: center;">Эклипс</h3>
+				<img src="./../theme/images/example_projects/eclipse_2_v1.png"
+					alt="изображение не найдено, сообщите администратору"
+					class="">
+				<p style="text-align: center;">Интернет-магазин косметики и бытовых товаров.</p>
+
+				<a href="http://eclipsetomsk.ru/" class="our_service_button"
+					role="button" target="_blank">Открыть сайт
+				</a>
+
+			</div>
+
+						<div class="our_service_plane">
+				<h3 style="text-align: center;">LikeOK</h3>
+				<img src="./../theme/images/example_projects/like_ok_v2_transparent_v2.png"
+					alt="изображение не найдено, сообщите администратору"
+					class="">
+				<p style="text-align: center;">Сервис по увеличению количества отметок "мне нравится" на сайте Одноклассники</p>
+
+				<a href="http://likeok.su/" class="our_service_button"
+					role="button" target="_blank">Открыть сайт
+				</a>
+
+			</div>
+
+
+		</div> <!-- enddiv our_services_list -->
+
+
+
+
+	</div> <!-- enddiv work_examples_row -->
+
+
+
+
+	<!-- VK Widget -->
+	<div id="vk_community_messages" style="width: 50px; height: 50px; position: fixed; z-index: 10000; bottom: 0px; right: 20px; margin: 0px 0px 20px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;">
+		<iframe name="fXD91171" src="./../theme/images/widget_community_messages.html" id="vkwidget2" style="overflow: hidden; box-shadow: none; border: none;" height="50" width="50"></iframe>
+	</div>
+	<script type="text/javascript">
+		VK.Widgets.CommunityMessages("vk_community_messages", 100861800, {disableExpandChatSound: "1",tooltipButtonText: "Есть вопрос? Задайте его здесь."});
+	</script>
+
+
+	<div class="footer_row">
+
+		<div class="col-lg-12">
+			<p>&nbsp;</p>
+		</div>
+
+
+
+
+		<div class="footer_info_plane">
+			<h4>Справка:</h4>
+
+			<script type="text/javascript">
+				var alert_support = function() {
+					alert("Для получения технической поддержки воспользуйтесь виджетом vk.com справа внизу сайта\nили напишите на электронную почту: support@16bit.su")
+				};
+			</script>
+
+			<a class="footer_links" href="#empty" onclick="alert_support()">
+				Техническая поддержка <p class="footer_links_info">(информация во всплывающем окне)</p>
+			</a>
+
+
+			<script type="text/javascript">
+				var alert_jobs = function() {
+					alert("Хотите работать с нами? Присылайте резюме в группу Вконтакте\nили воспользуйтсь виджетом vk.com справа внизу сайта,\nкроме того вы можете выслать резюме на электронную почту: support@16bit.su")
+				};
+			</script>
+
+			<a class="footer_links" href="#empty" onclick="alert_jobs()">
+				Вакансии <p class="footer_links_info">(информация во всплывающем окне)</p>
+			</a>
+
+
+			<a href="https://vk.com/16bit" class="footer_links" target="_blank">
+				Наше сообщество Вконтакте
+				<p class="footer_links_info">(ссылка в новой вкладке)</p>
+			</a>
+
+			<p class="footer_links">Контактный телефон: <span class="footer_phone_number" style="font-family: monospace;">+7 (923) 410 17 79</span></p>
+
+		</div>
+
+
+
+
+		<div class="col-lg-4 col-lg-offset-2">
+		</div>
+
+
+
+
+		<div class="col-lg-12">
+			<p>&nbsp;</p>
+			<p style="text-align: center;">С уважением, команда 16 Бит.</p>
+		</div>
+
+
+	</div><!-- endblock footer_row -->
+
+
+
+
+</body>
+
+
+</html>
