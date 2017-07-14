@@ -27,7 +27,7 @@ OUTPUT_PATH = '../'
 DELETE_OUTPUT_DIRECTORY = True
 
 
-TIMEZONE = 'Europe/Kiev'
+TIMEZONE = u'Europe/Kiev'
 DEFAULT_LANG = u'ru'
 
 

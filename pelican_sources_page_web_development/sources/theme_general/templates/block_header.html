@@ -45,7 +45,11 @@
 			</a>
 
 			<a href="#about_us" class="header___main_menu_button" role="button">
-				<span style="display: block; text-align: center;">ⓘ О нас</span>
+				<span style="display: block; text-align: center;">
+					{% if DEFAULT_LANG == "ru"  %}ⓘ О нас
+					{% else %}ⓘ About us
+					{% endif %}
+				</span>
 			</a>
 
 			<a href="#services" class="header___main_menu_button" role="button">

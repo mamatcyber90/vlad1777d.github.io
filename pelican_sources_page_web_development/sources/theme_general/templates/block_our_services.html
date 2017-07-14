@@ -3,7 +3,11 @@
 		<div class="our_services_header">
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
-			<h1 style="text-align: center;">Наши услуги:</h1>
+			<h1 style="text-align: center;">
+				{% if DEFAULT_LANG == "ru"  %}Наши услуги:
+				{% else %}Our services:
+				{% endif %}
+			</h1>
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
@@ -23,7 +27,10 @@
 				<div class="">
 					<div class="">
 						<a href="##" class="our_service_button"
-							role="button" target="_blank">Заказать
+							role="button" target="_blank">
+								{% if DEFAULT_LANG == "ru"  %}Заказать
+								{% else %}Order
+								{% endif %}
 						</a>
 					</div>
 				</div>
@@ -33,13 +40,22 @@
 
 
 		<div class="our_services_list">
+			{% if DEFAULT_LANG == "ru"  %}
+				{{ our_sevice ('Создание сайта', 'Быстрое создание одностраничных сайтов', 'от 5000 руб', 'website_creation.jpg') }}
+				{{ our_sevice ('Мобильные приложения', 'Быстрое создание мобильных решений для Android, iOS', 'от 10000 руб', 'mobile_apps.png') }}
+				{{ our_sevice ('СЕО оптимизация', 'Быстрая оптимизация сайта для поисковых систем', 'от 7000 руб', 'seo_optimizing.jpg') }}
+				{{ our_sevice ('Настройка рекламы', 'Быстрое создание кампаний Яндекс.Директ и Google.Adwords', 'от 9000 руб', 'setting_up_reclame_v2.png') }}
+				{{ our_sevice ('Оптимизация и поддрежка', 'Оптимизация и поддержка существующего проекта', 'от 5000 руб', 'optimisation_and_support.jpg') }}
+				{{ our_sevice ('Локализация', 'Перевод сайтов на другие языки для увеличения целевой аудитории', 'от 8000 руб', 'internationalization.png') }}
+			{% else %}
+				{{ our_sevice ('Website creation', 'Quick creation of single-page websites', 'starting 100 $', 'website_creation.jpg') }}
+				{{ our_sevice ('Mobile apps', 'Quick mobile apps creation for Android and iOS', 'starting 200 $', 'mobile_apps.png') }}
+				{{ our_sevice ('SEO', 'Quick optimization of website for search engines', 'starting 140 $', 'seo_optimizing.jpg') }}
+				{{ our_sevice ('Setting up advertisement', 'Fast creation of campaigns Yandex.Direct and Google.Adwords', 'starting 200 $', 'setting_up_reclame_v2.png') }}
+				{{ our_sevice ('Optimizing and support', 'Optimizing and support of existing project', 'starting 100 $', 'optimisation_and_support.jpg') }}
+				{{ our_sevice ('Internationalization', 'Translation websites into other languages to increase target audience', 'starting 150 $', 'internationalization.png') }}
+			{% endif %}
 
-			{{ our_sevice ('Создание сайта', 'Быстрое создание одностраничных сайтов', 'от 5000 руб', 'website_creation.jpg') }}
-			{{ our_sevice ('Мобильные приложения', 'Быстрое создание мобильных решений для Android, iOS', 'от 10000 руб', 'mobile_apps.png') }}
-			{{ our_sevice ('СЕО оптимизация', 'Быстрая оптимизация сайта для поисковых систем', 'от 7000 руб', 'seo_optimizing.jpg') }}
-			{{ our_sevice ('Настройка рекламы', 'Быстрое создание кампаний Яндекс.Директ и Google.Adwords', 'от 9000 руб', 'setting_reclame.jpg') }}
-			{{ our_sevice ('Оптимизация и поддрежка', 'Оптимизация и поддержка существующего проекта', 'от 5000 руб', 'optimisation_and_support.jpg') }}
-			{{ our_sevice ('Локализация', 'Перевод сайтов на другие языки для увеличения целевой аудитории', 'от 8000 руб', 'internationalization.png') }}
 
 		</div><!-- enddiv our_services_list -->
 	</div> <!-- enddiv our_services_row -->

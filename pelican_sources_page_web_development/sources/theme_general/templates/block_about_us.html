@@ -1,33 +1,62 @@
 {% block about_us %}
 	<div id="about_us" class="about_us_row">
 		<div class="our_services_header page_header">
-			<h1 style="text-align: center;">О нас:</h1>
+			<h1 style="text-align: center;">
+				{% if DEFAULT_LANG == "ru"  %}О нас:
+				{% else %}About us:
+				{% endif %}
+
+			</h1>
 		</div>
 
 		<div class="about_us_row___list">
 			<div class="about_us_row___list___item">
 				༄</br>
-				Мы - молодая команда, занимаемся любимым делом - помогаем воплощать ваши великолепные идеи в жизнь.
+				{% if DEFAULT_LANG == "ru"  %}
+					Мы - молодая команда, занимаемся любимым делом - помогаем воплощать ваши великолепные идеи в жизнь.
+				{% else %}
+					We are the young team, who do what we like - help bringing your great ideas to life.
+				{% endif %}
 			</div>
 			<div class="about_us_row___list___item">
 				༄</br>
-				Наша задача - создать максимально подходящий для конкретной задачи веб-сайт или приложение.
+				{% if DEFAULT_LANG == "ru"  %}
+					Наша задача - создать максимально подходящий для конкретной задачи веб-сайт или приложение.
+				{% else %}
+					Our target - create the most suitable website or application for your specific task.
+				{% endif %}
 			</div>
 			<div class="about_us_row___list___item">
 				༄</br>
-				Для реализации этой цели мы используем современные технологии и стандарты дизайна.
+				{% if DEFAULT_LANG == "ru"  %}
+					Для реализации этой цели мы используем современные технологии и стандарты дизайна.
+				{% else %}
+					To implement this, we use modern technologies and design standards.
+				{% endif %}
 			</div>
 			<div class="about_us_row___list___item">
 				༄</br>
-				Если вам нужен сайт - свяжитесь с нами любым удобным способом и получите консультацию.
+				{% if DEFAULT_LANG == "ru"  %}
+					Если вам нужен сайт - свяжитесь с нами любым удобным способом и получите консультацию.
+				{% else %}
+					If you need a website or advice - contact us by any convenient way.
+				{% endif %}
 			</div>
 			<div class="about_us_row___list___item">
 				༄</br>
-				После того, как мы составим техническое задание - в кратчайшие сроки возьмемся за работу.
+				{% if DEFAULT_LANG == "ru"  %}
+					После того, как мы составим техническое задание - в кратчайшие сроки возьмемся за работу.
+				{% else %}
+					After we'll prepare technical specifications, we can get to work in the shortest possible time.
+				{% endif %}
 			</div>
 			<div class="about_us_row___list___item">
 				༄</br>
-				Надеемся, что вы сможете добиться успеха с помощью созданного нами инструмента.
+				{% if DEFAULT_LANG == "ru"  %}
+					Надеемся, что вы сможете добиться успеха с помощью созданного нами инструмента.
+				{% else %}
+					Hope that you'll be able to achieve success using our tools.
+				{% endif %}
 			</div>
 		</div>
 

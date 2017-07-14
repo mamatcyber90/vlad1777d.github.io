@@ -22,9 +22,10 @@
 				{% if DEFAULT_LANG == "ru"  %}
 					Будьте как дома.
 				{% else %}
-					Feel like home.
+					Feel like home
 				{% endif %}
 			{% endset %}
+
 			{% set text %}
 				{% if DEFAULT_LANG == "ru"  %}
 					На нашем сайте вы можете в спокойной обстановке ознакомиться с
@@ -37,7 +38,6 @@
 					On our website you can in safe atmosphere learn about
 					offered services, receive information about used technologies,
 					see results of our work.
-					</br>
 					If you have some questions - you can always ask us using
 					message widget of vk.com (see bottom right corner).
 				{% endif %}
@@ -45,40 +45,109 @@
 
 			{{ new_carousel_item (header, text, 'be_like_home_with_cat_and_coffee.png') }}
 
-			{% set text %}
-				Сначала мы детально и глубоко изучим задачу, стоящую перед Вами,
-				выявим факторы и силы, влияющие на нее, и подготовим всю необходимую
-				информацию для организации работы по ее решению.
+
+			{% set header %}
+				{% if DEFAULT_LANG == "ru"  %}
+					Изучим вашу задачу.
+				{% else %}
+					Explore your task
+				{% endif %}
 			{% endset %}
 
-			{{ new_carousel_item ('Изучим вашу задачу.', text, 'learning_your_task.jpg') }}
-
 			{% set text %}
-				Мы тщательно изучаем важные аспекты взаимосвязи стоящей перед вами
-				задачей с общими целями и результатами деятельности Вашего бизнеса, а
-				также определяем, насколько Вы будете способны осуществлять изменения и
-				эффективно решать проблемы конкретным путем; на основе данного анализа
-				предложим вам приемлемые варианты решения задачи.
+				{% if DEFAULT_LANG == "ru"  %}
+					Сначала мы детально и глубоко изучим задачу, стоящую перед вами,
+					выявим факторы и силы, влияющие на нее, и подготовим всю необходимую
+					информацию для организации работы по ее решению.
+				{% else %}
+					First, we thoroughly and deeply examine the task facing you;
+					identify the factors and forces affecting it, and prepare all necessary
+					information for organizing work on it.
+				{% endif %}
 			{% endset %}
 
-			{{ new_carousel_item ('Проконсультируем и предложим решение.', text, 'consultation_hands.jpg') }}
+			{{ new_carousel_item (header, text, 'learning_your_task.jpg') }}
 
-			{% set text %}
-				После того, как мы составим техническое задание и договоримся о
-				сроках исполнения, вам нужно будет всего лишь немного подождать, пока мы
-				выполняем для вас работу. Мы позаботимся о том, чтобы решение
-				соответствовало всем вашим требованиям.
+
+			{% set header %}
+				{% if DEFAULT_LANG == "ru"  %}
+					Проконсультируем и предложим решение.
+				{% else %}
+					We'll advice and offer you solution
+				{% endif %}
 			{% endset %}
 
-			{{ new_carousel_item ('Реализуем ваш проект.', text, 'wait_modern.jpg') }}
-
 			{% set text %}
-				Готовый проект - не последний этап жизни проекта. В мире все течет и
-				изменяется. Мы всей душой хотим, чтобы проект клиента рос и развивался.
-				Чтобы маленький проект становился большим и успешным.
+				{% if DEFAULT_LANG == "ru"  %}
+					Мы тщательно изучаем важные аспекты взаимосвязи стоящей перед вами
+					задачей с общими целями и результатами деятельности вашего бизнеса, а
+					также определяем, насколько вы будете способны осуществлять изменения и
+					эффективно решать проблемы конкретным путем.
+					На основе данного анализа
+					предложим вам приемлемые варианты решения задачи.
+				{% else %}
+					We carefully study the important aspects of relationship between
+					standing in front of you task and common goals and outcomes of your business;
+					also we determine how you will be able to make changes and
+					effectively solve problems in a specific way.
+					On the basis of this analysis
+					we'll offer you reasonable solutions.
+				{% endif %}
 			{% endset %}
 
-			{{ new_carousel_item ('Поддержим развитие вашего проекта.', text, 'main_1.jpg') }}
+			{{ new_carousel_item (header, text, 'consultation_hands.jpg') }}
+
+
+			{% set header %}
+				{% if DEFAULT_LANG == "ru"  %}
+					Реализуем ваш проект.
+				{% else %}
+					Implement your project
+				{% endif %}
+			{% endset %}
+
+			{% set text %}
+				{% if DEFAULT_LANG == "ru"  %}
+					После того, как мы составим техническое задание и договоримся о
+					сроках исполнения, вам нужно будет всего лишь немного подождать, пока мы
+					выполняем для вас работу. Мы позаботимся о том, чтобы решение
+					соответствовало всем вашим требованиям.
+				{% else %}
+					After we prepare technical specifications and arrange the deadlines,
+					you only need to wait a bit until we perform our work.
+					We'll make sure that the decision match all your requirements.
+				{% endif %}
+			{% endset %}
+
+			{{ new_carousel_item (header, text, 'wait_modern.jpg') }}
+
+
+			{% set text %}
+
+			{% endset %}
+
+			{% set header %}
+				{% if DEFAULT_LANG == "ru"  %}
+					Поддержим развитие вашего проекта.
+				{% else %}
+					Support your project
+				{% endif %}
+			{% endset %}
+
+			{% set text %}
+				{% if DEFAULT_LANG == "ru"  %}
+					Готовый проект - не последний этап жизни проекта. В мире все течет и изменяется.
+					Мы всей душой хотим, чтобы проект клиента рос и развивался.
+					Чтобы маленький проект становился большим и успешным.
+				{% else %}
+					The ready project is not the last stage in the life of the project.
+					In the world everything flows and changes.
+					We wholeheartedly want the client project to grow and expand.
+					For little projects to become big and successful.
+				{% endif %}
+			{% endset %}
+
+			{{ new_carousel_item (header, text, 'main_1.jpg') }}
 
 			<script>
 				turn_off_carousel = function () {Carousel.carousels[0].pause()};
