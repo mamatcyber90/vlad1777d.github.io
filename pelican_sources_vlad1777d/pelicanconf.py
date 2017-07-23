@@ -10,21 +10,35 @@ import sys
 
 
 
-AUTHOR = u'Vladislav'
-SITENAME = u'Vlad1777d - личная страница.'
-SITEURL = ''
-
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # сделал по образу и подобию Django
 PATH = 'sources'
-STATIC_PATHS = ['data', 'images', 'bootstrap', 'jquery']  # будут внутри папки PATH
+STATIC_PATHS = ['images']  # будут внутри папки PATH
 ARTICLE_PATHS = ['texts']
 THEME = join(PATH, 'theme_general')
 DIRECT_TEMPLATES = ['index', 'page_glass_themes',
-					'page_other_soft', 'page_web_development']
+					'page_other_soft']
 					# здесь написать имена тех шаблонов, которые будут включены в постоение
 OUTPUT_PATH = '../'
 DELETE_OUTPUT_DIRECTORY = True
+
+
+
+
+THIS_FILES_DIR = os.path.dirname (__file__)
+if not THIS_FILES_DIR: THIS_FILES_DIR = os.getcwd ()
+# ^ hach to the bug, when __file__ is not abspath, but 'pelicanconf.py'
+# pelican is always launched from directory with this file
+ABS_OUTPUT_PATH = os.path.abspath ( os.path.join (THIS_FILES_DIR, OUTPUT_PATH))
+
+
+
+
+AUTHOR = u'Vladislav'
+SITENAME = u'Vlad1777d - личная страница.'
+SITEURL = 'file://' + ABS_OUTPUT_PATH  # вместо RELATIVE_URLS = True
+#print (SITEURL)
+#print (__file__)
+
+
 
 
 TIMEZONE = u'Europe/Kiev'
@@ -32,7 +46,7 @@ DEFAULT_LANG = u'ru'
 
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False  # вместо этого адрес сайта получается из функции relpath_to_site () в шаблонах или из SITEURL отсюда
 
 
 PLUGIN_PATHS = [join(PATH, 'plugins')]
@@ -40,7 +54,6 @@ PLUGINS = ['i18n_subsites']
 I18N_SUBSITES = {
     'en': {
         'SITENAME': 'Vlad1777d - personal page.',
-        'DL': 'en'
     }
 }
 

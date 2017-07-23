@@ -1,5 +1,10 @@
 {# Base template for all other files. #}
-{% from "shortcuts.html" import root_relative with context %}
+
+{# Получим путь относительно корня сайта, вне зависимости от RELATIVE_URLS == True или False: #}
+{# relpath_to_site(lang, target_lang) - часть плагина i18n_subsite для пеликана #}
+
+{% set root_relative = SITEURL + '/' + relpath_to_site(DEFAULT_LANG, main_lang) %}
+
 <!DOCTYPE html>
 <html>
 

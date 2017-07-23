@@ -13,8 +13,6 @@
 		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/cookies.coffee"></script>
 		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/sticky_panel.coffee"></script>
 		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/start.coffee"></script>
-		<!-- import jQuery -->
-			<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 		
 	
 	<title>{{ SITENAME }}</title>
@@ -24,8 +22,6 @@
 
 
 {% block body %}
-
-	{% from "shortcuts.html" import root_relative with context %}
 	
 	{% include "block_header.html" %}
 	
@@ -37,6 +33,7 @@
 	
 	{% block late_scripts %}
 	{% endblock late_scripts %}
+	<!-- {{ root_relative }} Because of my bug on github -->
 	
 {% endblock body %}
 

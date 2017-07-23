@@ -1,7 +1,10 @@
 #! /usr/bin/python3
 
-import os
+import os, os.path
 
+
+THIS_FILES_DIR = os.path.dirname (__file__)
+os.chdir (THIS_FILES_DIR)
 
 os.system('hg addremove')
 os.system('hg commit')

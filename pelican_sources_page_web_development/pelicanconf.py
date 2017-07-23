@@ -10,12 +10,6 @@ import sys
 
 
 
-AUTHOR = u'Vladislav'
-SITENAME = u'Разработка веб-сайтов.'
-SITEURL = ''
-
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # сделал по образу и подобию Django
 PATH = 'sources'
 STATIC_PATHS = []  # будут внутри папки PATH
 ARTICLE_PATHS = []
@@ -26,12 +20,31 @@ OUTPUT_PATH = '../page_web_development'
 DELETE_OUTPUT_DIRECTORY = True
 
 
+
+
+THIS_FILES_DIR = os.path.dirname (__file__)
+if not THIS_FILES_DIR: THIS_FILES_DIR = os.getcwd ()
+# ^ hach to the bug, when __file__ is not abspath, but 'pelicanconf.py'
+# pelican is always launched from directory with this file
+ABS_OUTPUT_PATH = os.path.abspath ( os.path.join (THIS_FILES_DIR, OUTPUT_PATH))
+
+
+
+
+AUTHOR = u'Vladislav'
+SITENAME = u'Разработка веб-сайтов.'
+SITEURL = 'file://' + ABS_OUTPUT_PATH   # вместо RELATIVE_URLS = True
+VLAD1777D_SITE_PATH = 'file://' + os.path.abspath ( os.path.join (ABS_OUTPUT_PATH, '../'))
+
+
+
+
 TIMEZONE = 'Europe/Kiev'
 DEFAULT_LANG = u'ru'
 
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 
 JINJA_ENVIRONMENT = {}
@@ -43,12 +56,8 @@ PLUGINS = ['i18n_subsites']
 I18N_SUBSITES = {
     'en': {
         'SITENAME': 'Web development',
-        'DL': 'en'
     }
 }
-
-
-
 
 
 
