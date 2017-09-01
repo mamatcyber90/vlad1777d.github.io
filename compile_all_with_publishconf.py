@@ -6,7 +6,7 @@ import sys
 
 
 THIS_FILES_DIR = os.path.dirname (__file__)
-DIRS_TO_COMPILE = ('./pelican_sources_vlad1777d', './pelican_sources_page_web_development')
+DIRS_TO_COMPILE = ('./sources_vlad1777d', './sources_web_development', './sources_your_averters')
 
 
 for comp_dir in DIRS_TO_COMPILE:

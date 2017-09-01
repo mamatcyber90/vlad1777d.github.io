@@ -14,9 +14,9 @@ PATH = 'sources'
 STATIC_PATHS = []  # будут внутри папки PATH
 ARTICLE_PATHS = []
 THEME = join(PATH, 'theme_general')
-DIRECT_TEMPLATES = ['page_web_development']
+DIRECT_TEMPLATES = ['web_development']
 # ^ здесь написать имена тех шаблонов, которые будут включены в постоение
-OUTPUT_PATH = '../page_web_development'
+OUTPUT_PATH = '../web'
 DELETE_OUTPUT_DIRECTORY = True
 
 
