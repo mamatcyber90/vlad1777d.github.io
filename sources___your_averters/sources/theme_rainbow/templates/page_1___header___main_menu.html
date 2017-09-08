@@ -1,0 +1,59 @@
+<nav role="navigation" class="main_menu">
+
+
+	<a href="{{ SITEURL }}/index.html" class="main_menu___button   main_menu___button___averters">
+		<img src="{{ root_relative }}/theme/images/logo_in_menu.svg">
+		{% if DEFAULT_LANG == "ru" %} Твои обереги
+		{% else %} Your averters
+		{% endif %}
+	</a>
+
+
+
+
+	<a
+		href="{{ VLAD1777D_SITE_PATH }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html"
+		class="main_menu___button   main_menu___button___back"
+	>
+		{% if DEFAULT_LANG == "ru" %} Назад
+		{% else %} Back
+		{% endif %}
+	</a>
+
+
+
+
+	<a class="main_menu___button   main_menu___button___main"
+		href="#header"
+	>
+		{% if DEFAULT_LANG == "ru" %} Главная
+		{% else %} Main
+		{% endif %}
+	</a>
+
+	<a class="main_menu___button   main_menu___button___news"
+		href="#news"
+	>
+		{% if DEFAULT_LANG == "ru" %} Новости
+		{% else %} News
+		{% endif %}
+	</a>
+
+	<a class="main_menu___button   main_menu___button___music"
+		href="#music"
+	>
+		{% if DEFAULT_LANG == "ru" %} Музыка
+		{% else %} Music
+		{% endif %}
+	</a>
+
+	<a class="main_menu___button   main_menu___button___other"
+		href="#photo"
+	>
+		{% if DEFAULT_LANG == "ru" %} Фото, соц. сети, прочее
+		{% else %} Photo, social network, etc
+		{% endif %}
+	</a>
+
+
+</nav>

@@ -1,0 +1,33 @@
+{% from "shortcuts.html" import root_relative with context %}
+<!DOCTYPE html>
+<html>
+
+<head>
+{% block head %}
+
+	<meta charset="utf-8" lang="{{ DEFAULT_LANG }}" />
+
+	<!-- чтобы bootstrap с мобильными устр. работал: -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="{{ root_relative }}/theme/scripts/coffeescript_compiler.js"></script>
+
+	<!-- Основной стиль страницы: -->
+	<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/main.css"/>
+
+	<!-- Шрифты: -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">  <!-- font-family: 'Noto Sans', sans-serif; -->
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">  <!-- font-family: 'Bad Script', cursive; -->
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">  <!-- font-family: 'Neucha', cursive; -->
+	<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">  <!-- font-family: 'Ruslan Display', cursive; -->
+	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">  <!-- font-family: 'Gabriela', serif; -->
+
+{% endblock %}
+</head>
+
+<body>
+{% block body %}
+{% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+
+{% block head %}
+	{{ super() }}
+
+	<link rel="icon" type="image/png" href="{{ root_relative }}/theme/images/site_icon_sun.png">
+
+	<title>
+		{% if DEFAULT_LANG == "ru" %}
+			Твои обереги
+		{% else %}
+			Your averters
+		{% endif %}
+	</title>
+{% endblock head %}
+
+
+
+
+{% block body %}
+
+	{% include "page_1___header.html" %}
+	<script type="text/javascript" src="{{ root_relative }}/theme/scripts/clouds.js"></script>
+	<script type="text/coffeescript" src="{{ root_relative }}/theme/scripts/move_background.coffee"></script>
+	{% include "page_2_news.html" %}
+	{% include "page_3_music.html" %}
+	{% include "page_4_photo.html" %}
+	{% include "page_5_footer.html" %}
+
+{% endblock body %}

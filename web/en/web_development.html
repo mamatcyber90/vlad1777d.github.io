@@ -1,0 +1,536 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	
+	<meta charset="utf-8" lang="en" />
+
+	<!-- чтобы bootstrap с мобильными устр. работал: -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Картинка во вкладке: -->
+		<link rel="icon" type="image/png" href="https://vlad1777d.github.io/page_web_development/en/../theme/images/logo_16_bit.svg">
+
+	<!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+		<!-- <script src="https://vlad1777d.github.io/page_web_development/en/../theme/js/jquery-3.2.1.min.js"></script> -->
+
+	<!-- Bootstrap -->
+		<!-- <link rel="stylesheet" type="text/css" href="https://vlad1777d.github.io/page_web_development/en/../theme/bootstrap/css/bootstrap.min.css"/> -->
+
+		<!-- <script src="https://vlad1777d.github.io/page_web_development/en/../theme/bootstrap/js/bootstrap.min.js"></script> -->
+
+	<!-- Компиллятор CoffeeScript: -->
+		<script type="text/javascript" src="https://vlad1777d.github.io/page_web_development/en/../theme/js/coffeescript_compiler.js"></script>
+
+
+
+	<title>
+Web development
+	</title>
+
+	<!-- Для листателя картинок (карусели): -->
+		<link rel="stylesheet" type="text/css" href="https://vlad1777d.github.io/page_web_development/en/../theme/css/carousel.min.css"/>
+		<script type="text/javascript" src="https://vlad1777d.github.io/page_web_development/en/../theme/js/carousel.js"></script>
+
+	<!-- Основной стиль страницы (остальные - каждый на своей странице): -->
+		<link rel="stylesheet" type="text/css" href="https://vlad1777d.github.io/page_web_development/en/../theme/css/details.css"/>
+
+	<script type="text/javascript" src="https://vlad1777d.github.io/page_web_development/en/../theme/js/change_background_gradient.js"></script>
+
+</head>
+
+
+<body id="changeable_background_gradient">
+
+
+
+
+	<div class="header_row">
+
+
+		<div class="header___first_line">
+				<a href="https://vlad1777d.github.io/page_web_development/en/../en/web_development.html" class="header___first_line___link">
+					<div class="header___first_line___logo">
+⠴16 BITS⠉⡏
+					</div>
+				</a>
+				<div class="header___first_line___phone_number">+7 (923) 410-17-79</div>
+		</div>
+
+
+
+
+		<div class="header___second_line">
+			<div class="header___second_line___text">
+We create websites and apps
+			</div>
+
+			<div class="header___language_switcher">
+				<a class="header___language_button header___russian_button" href="https://vlad1777d.github.io/page_web_development/en/../web_development.html"></a>
+				<div class="header___language_button_separator"></div>
+				<a class="header___language_button header___english_button" href="https://vlad1777d.github.io/page_web_development/en/../en/web_development.html"></a>
+			</div>
+		</div>
+
+
+
+		<div class="header___main_menu_row">
+
+			<a href="https://vlad1777d.github.io/en/index.html"
+				class="header___main_menu_button"
+				role="button">
+					<span>
+↩ Back
+					</span>
+			</a>
+
+			<a href="#about_us" class="header___main_menu_button" role="button">
+				<span style="display: block; text-align: center;">
+ⓘ About us
+				</span>
+			</a>
+
+			<a href="#services" class="header___main_menu_button" role="button">
+				<span>
+☕ Services
+				</span>
+			</a>
+
+			<a href="#work_examples" class="header___main_menu_button" role="button">
+				<span>
+☑ Work examples
+				</span>
+			</a>
+
+		</div>
+
+
+	</div>
+
+
+	<div class="carousel"
+	data-carousel-delay="5000"
+	data-carousel-indicators=""
+	data-carousel-touch-threshold="40%"
+	data-carousel-rubberband-swipe="1.5">
+		<div class="carousel-slider">
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">					Feel like home
+</h2>
+					<div style="margin-bottom: 0.8em;">					On our website you can in safe atmosphere learn about
+					offered services, receive information about used technologies,
+					see results of our work.
+					If you have some questions - you can always ask us using
+					message widget of vk.com (see bottom right corner).
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="https://vlad1777d.github.io/page_web_development/en/../theme/images/header_carousel/be_like_home_with_cat_and_coffee.png">
+				</div>
+			</div>
+
+
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">					Explore your task
+</h2>
+					<div style="margin-bottom: 0.8em;">					First, we thoroughly and deeply examine the task facing you;
+					identify the factors and forces affecting it, and prepare all necessary
+					information for organizing work on it.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="https://vlad1777d.github.io/page_web_development/en/../theme/images/header_carousel/learning_your_task.jpg">
+				</div>
+			</div>
+
+
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">					We'll advice and offer you solution
+</h2>
+					<div style="margin-bottom: 0.8em;">					We carefully study the important aspects of relationship between
+					standing in front of you task and common goals and outcomes of your business;
+					also we determine how you will be able to make changes and
+					effectively solve problems in a specific way.
+					On the basis of this analysis
+					we'll offer you reasonable solutions.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="https://vlad1777d.github.io/page_web_development/en/../theme/images/header_carousel/consultation_hands.jpg">
+				</div>
+			</div>
+
+
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">					Implement your project
+</h2>
+					<div style="margin-bottom: 0.8em;">					After we prepare technical specifications and arrange the deadlines,
+					you only need to wait a bit until we perform our work.
+					We'll make sure that the decision match all your requirements.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="https://vlad1777d.github.io/page_web_development/en/../theme/images/header_carousel/wait_modern.jpg">
+				</div>
+			</div>
+
+
+
+
+
+
+						<div class="carousel-item" data-carousel-href="">
+				<div class="carousel-item-text">
+					<h2 style="margin-bottom: 0.8em; margin-top: 0.3em;">					Support your project
+</h2>
+					<div style="margin-bottom: 0.8em;">					The ready project is not the last stage in the life of the project.
+					In the world everything flows and changes.
+					We wholeheartedly want the client project to grow and expand.
+					For little projects to become big and successful.
+</div>
+					<img src="" alt="Image description"
+						data-carousel-src="https://vlad1777d.github.io/page_web_development/en/../theme/images/header_carousel/main_1.jpg">
+				</div>
+			</div>
+
+
+			<script>
+				turn_off_carousel = function () {Carousel.carousels[0].pause()};
+				turn_on_carousel = function () {Carousel.carousels[0].play()};
+				var needed_elements = document.getElementsByClassName('carousel-item-text');
+
+				for (var i = 0, length1 = needed_elements.length; i < length1; i++) {
+					needed_elements[i].addEventListener('mouseover', turn_off_carousel);
+					needed_elements[i].addEventListener('mouseout', turn_on_carousel);
+				}
+			</script>
+
+
+		</div>
+	</div> <!-- enddiv carousel -->
+
+
+	<div id="services" class="our_services_row">
+		<div class="our_services_header">
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h1 style="text-align: center;">
+Our services:
+			</h1>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+
+
+
+
+
+
+		<div class="our_services_list">
+							<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Website creation</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/services/website_creation.jpg"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Quick creation of single-page websites</p>
+				<h4 style="text-align: center;">starting 100 $</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">
+Order
+						</a>
+					</div>
+				</div>
+			</div>
+
+							<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Mobile apps</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/services/mobile_apps.png"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Quick mobile apps creation for Android and iOS</p>
+				<h4 style="text-align: center;">starting 200 $</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">
+Order
+						</a>
+					</div>
+				</div>
+			</div>
+
+							<div class="our_service_plane">
+
+				<h3 style="text-align: center;">SEO</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/services/seo_optimizing.jpg"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Quick optimization of website for search engines</p>
+				<h4 style="text-align: center;">starting 140 $</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">
+Order
+						</a>
+					</div>
+				</div>
+			</div>
+
+							<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Setting up advertisement</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/services/setting_up_reclame_v2.png"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Fast creation of campaigns Yandex.Direct and Google.Adwords</p>
+				<h4 style="text-align: center;">starting 200 $</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">
+Order
+						</a>
+					</div>
+				</div>
+			</div>
+
+							<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Optimizing and support</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/services/optimisation_and_support.jpg"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Optimizing and support of existing project</p>
+				<h4 style="text-align: center;">starting 100 $</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">
+Order
+						</a>
+					</div>
+				</div>
+			</div>
+
+							<div class="our_service_plane">
+
+				<h3 style="text-align: center;">Internationalization</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/services/internationalization.png"
+					alt="изображение не найдено, сообщите администратору" class="">
+				<p style="text-align: center;">Translation websites into other languages to increase target audience</p>
+				<h4 style="text-align: center;">starting 150 $</h4>
+
+				<div class="">
+					<div class="">
+						<a href="##" class="our_service_button"
+							role="button" target="_blank">
+Order
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div><!-- enddiv our_services_list -->
+	</div> <!-- enddiv our_services_row -->
+	<div id="work_examples" class="work_examples_row">
+
+
+
+
+		<div class="our_services_header">
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h1 style="text-align: center;">
+Work examples:
+			</h1>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+
+
+
+
+		<div class="our_services_list">
+
+							<div class="our_service_plane">
+				<h3 style="text-align: center;">Souz Eco</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/example_projects/souz-eco_logo_v2.png"
+					alt="изображение не найдено, сообщите администратору"
+					class="">
+				<p style="text-align: center;">A little single-page website for washing machines repairing service</p>
+
+				<a href="https://souz-eco.github.io/" class="our_service_button"
+				role="button" target="_blank">
+Open website
+				</a>
+
+			</div>
+
+							<div class="our_service_plane">
+				<h3 style="text-align: center;">Eclipse Tomsk</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/example_projects/eclipse_2_v1.png"
+					alt="изображение не найдено, сообщите администратору"
+					class="">
+				<p style="text-align: center;">Online store of cosmetics and household goods</p>
+
+				<a href="http://eclipsetomsk.ru/" class="our_service_button"
+				role="button" target="_blank">
+Open website
+				</a>
+
+			</div>
+
+							<div class="our_service_plane">
+				<h3 style="text-align: center;">LikeOK</h3>
+				<img src="https://vlad1777d.github.io/page_web_development/en/../theme/images/example_projects/like_ok_v2_transparent_v2.png"
+					alt="изображение не найдено, сообщите администратору"
+					class="">
+				<p style="text-align: center;">Service to increase number of "likes" on ok.ru website</p>
+
+				<a href="http://likeok.su/" class="our_service_button"
+				role="button" target="_blank">
+Open website
+				</a>
+
+			</div>
+
+
+		</div> <!-- enddiv our_services_list -->
+
+
+
+
+	</div> <!-- enddiv work_examples_row -->
+	<div id="about_us" class="about_us_row">
+		<div class="our_services_header page_header">
+			<h1 style="text-align: center;">
+About us:
+
+			</h1>
+		</div>
+
+		<div class="about_us_row___list">
+			<div class="about_us_row___list___item">
+				༄</br>
+					We are the young team, who do what we like - help bringing your great ideas to life.
+			</div>
+			<div class="about_us_row___list___item">
+				༄</br>
+					Our target - create the most suitable website or application for your specific task.
+			</div>
+			<div class="about_us_row___list___item">
+				༄</br>
+					To implement this, we use modern technologies and design standards.
+			</div>
+			<div class="about_us_row___list___item">
+				༄</br>
+					If you need a website or advice - contact us by any convenient way.
+			</div>
+			<div class="about_us_row___list___item">
+				༄</br>
+					After we'll prepare technical specifications, we can get to work in the shortest possible time.
+			</div>
+			<div class="about_us_row___list___item">
+				༄</br>
+					Hope that you'll be able to achieve success using our tools.
+			</div>
+		</div>
+
+
+
+	</div> <!-- enddiv our_services_row -->
+	<div class="footer_row">
+
+		<div class="col-lg-12">
+			<p>&nbsp;</p>
+		</div>
+
+
+
+
+		<div class="footer_info_plane">
+			<h4>
+					Info:
+			</h4>
+
+			<script type="text/javascript">
+				var alert_support = function() {
+						alert("To get technical support, please use vk.com widget in right bottom of screen\nor write us on e-mail: support@16bit.su")
+				};
+			</script>
+
+			<a class="footer_links" href="#empty" onclick="alert_support()">
+					Technical support <p class="footer_links_info">(info in pop-up window)</p>
+			</a>
+
+
+			<script type="text/javascript">
+				var alert_jobs = function() {
+					alert("Do you want to work with us? Send your CV into vk.com group\nor use vk.com widget in the bottom right of screen,\nalso you can send CV to our e-mail: support@16bit.su")};
+			</script>
+
+			<a class="footer_links" href="#empty" onclick="alert_jobs()">
+					Jobs <p class="footer_links_info">(information in the pop-up window)</p>
+			</a>
+
+
+			<a href="https://vk.com/16bit" class="footer_links" target="_blank">
+					Our community on vk.com
+					<p class="footer_links_info">(link in new tab)</p>
+
+			</a>
+
+				<p class="footer_links">Contact phone: <span class="footer_phone_number" style="font-family: monospace;">+7 (923) 410 17 79</span></p>
+
+
+		</div>
+
+
+
+
+		<div class="col-lg-4 col-lg-offset-2">
+		</div>
+
+
+
+
+		<div class="col-lg-12">
+			<p>&nbsp;</p>
+				<p style="text-align: center;">Best regards, 16 Bits team</p>
+		</div>
+
+
+	</div><!-- endblock footer_row -->
+	<!--https://vlad1777d.github.io/page_web_development/en/.. used it here because of bug https://github.com/pallets/jinja/issues/743 -->
+
+
+
+</body>
+
+
+</html>

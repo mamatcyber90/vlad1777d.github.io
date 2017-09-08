@@ -1,0 +1,40 @@
+{% from "shortcuts.html" import root_relative with context %}
+
+
+{% block page_1_header %}
+<header id="header">
+
+
+	<div class="header___background_sky">
+	</div>
+
+	<div class="header___background_sun">
+	</div>
+
+	<div class="header___background_clouds" id="viewport">
+  		<div id="world"></div>
+	</div>
+
+	<div class="header___background_black">
+		<img class="header___birds" src="{{ root_relative }}/theme/images/crows_40_speed.gif">
+	</div>
+
+	<div class="header___content">
+			<h1 class="welcome_title">
+				{% if DEFAULT_LANG == "ru" %}
+					Добро пожаловать<br/>на страницу проекта<br/><ins>Твои обереги</ins>
+				{% else %}
+					Welcome to<br/><ins>Your Averters</ins><br/><br/>project page
+				{% endif %}
+			</h1>
+
+		<a class="arrow_link ancLinks" href="#news">
+			<img class="arrow_image" src="{{ root_relative }}/theme/images/arrow_v2.svg">
+		</a>
+	</div>
+
+	{% include "page_1___header___main_menu.html" %}
+
+
+</header>
+{% endblock page_1_header %}

@@ -1,0 +1,3 @@
+{# Получим путь относительно корня сайта, вне зависимости от RELATIVE_URLS == True или False: #}
+	{% set root_relative = '.' + '/' + relpath_to_site(DEFAULT_LANG, main_lang) %}
+{# relpath_to_site(lang, target_lang) - часть плагина i18n_subsite для пеликана #}
