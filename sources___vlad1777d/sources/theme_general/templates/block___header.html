@@ -1,0 +1,53 @@
+{% from 'links.html' import
+	link___main_page, link___main_page___russian, link___main_page___english
+with context %}
+
+
+{% block header %}
+<header>
+
+
+
+
+
+	<a
+		class="main_title button_ripple"
+		onclick="go_after_timeout(this, event, '{{ link___main_page }}')"
+	>
+		{% if DEFAULT_LANG == "ru"  %}Добро пожаловать на личную страницу Vlad1777d.
+		{% else %}Welcome to the personal page of Vlad1777d.
+		{% endif %}
+	</a>
+
+
+
+
+
+{% include "block___header___top_panel.html" %}
+
+
+
+
+
+<div class="language_switcher">
+	<a class="language_button russian_button button_ripple" onclick="go_after_timeout(this, event, '{{ link___main_page___russian }}')"></a>
+	<div class="language_button_separator"></div>
+	<a class="language_button english_button button_ripple" onclick="go_after_timeout(this, event, '{{ link___main_page___english }}')"></a>
+</div>
+
+
+
+
+
+<div class="text_right_bottom">
+	Vlad1777d
+	<div class="text_right_bottom_little">
+	{% if DEFAULT_LANG == "ru"  %}Информация о проектах, загрузки, прочее.
+	{% else %}Information about projects, downloads, etc.
+	{% endif %}
+	</div>
+</div>
+
+
+</header>
+{% endblock header %}

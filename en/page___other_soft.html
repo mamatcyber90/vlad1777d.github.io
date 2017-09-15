@@ -30,36 +30,13 @@
 		<link rel="stylesheet" type="text/css" href="https://vlad1777d.github.io/en/../theme/css/block___header.css"/>
 		<link rel="stylesheet" type="text/css" href="https://vlad1777d.github.io/en/../theme/css/block___content.css"/>
 		<link rel="stylesheet" type="text/css" href="https://vlad1777d.github.io/en/../theme/css/block___footer.css"/>
-
-	<!-- Считаем и, если нужно, запишем данные в куки: -->
-		<script type="text/coffeescript" src="https://vlad1777d.github.io/en/../theme/js/cookies.coffee"></script>
-		<script type="text/coffeescript" src="https://vlad1777d.github.io/en/../theme/js/sticky_panel.coffee"></script>
-		<script type="text/coffeescript" src="https://vlad1777d.github.io/en/../theme/js/first_start.coffee"></script>
+		<link rel="stylesheet" type="text/css" href="https://vlad1777d.github.io/en/../theme/css/page___info_page.css"/>
 
 	<title>Vlad1777d - personal page.</title>
 </head>
 
 
 <body>
-
-
-
-<header>
-
-
-
-
-
-	<a
-		class="main_title button_ripple"
-		onclick="go_after_timeout(this, event, './../en/index.html')"
-	>
-Welcome to the personal page of Vlad1777d.
-	</a>
-
-
-
-
 
 
 
@@ -123,35 +100,85 @@ Contribute
 		</a>
 </div>
 
-
-
-
-
-<div class="language_switcher">
-	<a class="language_button russian_button button_ripple" onclick="go_after_timeout(this, event, './../index.html')"></a>
-	<div class="language_button_separator"></div>
-	<a class="language_button english_button button_ripple" onclick="go_after_timeout(this, event, './../en/index.html')"></a>
-</div>
-
-
-
-
-
-<div class="text_right_bottom">
-	Vlad1777d
-	<div class="text_right_bottom_little">
-Information about projects, downloads, etc.
-	</div>
-</div>
-
-
-</header>
-
-
-
 <section id="block___content" class="block___content">
-		(not ready yet, under development)
+
+
+<center><h1>
+Other software:
+</h1></center>
+
+
+<div>
+<h2>Omega Chess Genie.</h2>
+	Non-standard chess game, written in Genie.</br>
+	Code on github:
+	<a href="https://github.com/vlad1777d/Omega_Chess_Genie" target="_blank">
+		https://github.com/vlad1777d/Omega_Chess_Genie (link in new tab)
+	</a>
+
+
+</br>
+</br>
+	I write it as a study project for learning graphic library GTK and Genie language.
+</div>
+
+
+<div>
+<h2>Genie.</h2>
+	While writing "Omega Chess Genie" I met with errors in compiler,
+	so I decided to fix them.
+	My contrubutions to Genie:
+
+<ul>
+	<li>
+			Comments at the end of blocks break compilation:
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=611085" target="_blank">
+			https://bugzilla.gnome.org/show_bug.cgi?id=611085
+(link in new tab)
+		</a>
+	</li>
+	<li>
+			Add possibility to write enumeration values into one line separated by comma:
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=776833" target="_blank"">
+			https://bugzilla.gnome.org/show_bug.cgi?id=776833
+(link in new tab)
+		</a>
+	</li>
+	<li>
+			Making for loops syntax more consistent, added ability to analyse direction automatically:
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=781966" target="_blank">
+			https://bugzilla.gnome.org/show_bug.cgi?id=781966
+(link in new tab)
+		</a>
+	</li>
+	<li>
+			Added ability to define methods in enums:
+		<a href="https://bugzilla.gnome.org/show_bug.cgi?id=776835" target="_blank">
+			https://bugzilla.gnome.org/show_bug.cgi?id=776835
+(link in new tab)
+		</a>
+	</li>
+</ul>
+</div>
+
+
+<div>
+<h2>OASIS.</h2>
+	OASIS game from first person, created using UPBGE - modified BGE (Blender Game Engine).</br></br>
+	Code on github:
+	<a href="https://github.com/vlad1777d/Oasis" target="_blank">
+		https://github.com/vlad1777d/Oasis (link in new tab)
+	</a></br>
+	Group on vk.com:
+	<a href="https://vk.com/open_oasis" target="_blank">
+		https://vk.com/open_oasis (link in new tab)
+	</a></br>
+	Ready system of dynamic grass placing:</br></br>
+	<iframe width="355" height="200" src="https://www.youtube.com/embed/49hS_4n1G4k" frameborder="0" allowfullscreen></iframe>
+</div>
+
 </section>
+
 
 
 <footer class="footer">
@@ -198,8 +225,6 @@ Best regards, Vladislav.
 </div>
 
 </footer>
-
-	<!-- https://vlad1777d.github.io/en/.. Because of my bug on github -->
 
 </body>
 

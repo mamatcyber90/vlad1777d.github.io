@@ -14,8 +14,8 @@ PATH = 'sources'
 STATIC_PATHS = ['images']  # будут внутри папки PATH
 ARTICLE_PATHS = ['texts']
 THEME = join(PATH, 'theme_general')
-DIRECT_TEMPLATES = ['index', 'page_glass_themes',
-					'page_other_soft']
+DIRECT_TEMPLATES = ['index', 'page___glass_themes',
+					'page___other_soft']
 					# здесь написать имена тех шаблонов, которые будут включены в постоение
 OUTPUT_PATH = '../'
 DELETE_OUTPUT_DIRECTORY = True  # it will remove only a subdirectory, if output - is a parent directory

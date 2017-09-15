@@ -1,0 +1,261 @@
+header {
+	display: block;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	left: 0;
+	top: 0;
+	padding-top: 0;
+
+	background-image: url('../images/DSC_0054_ships_1080.JPG');
+	background-attachment: local;
+	background-size: cover;
+}
+
+
+
+
+.main_title {
+	/* Заглавие "Добро пожаловать" со ссылкой на главную страницу. */
+	display: flex;
+	justify-content: flex-start;
+	width: calc(100% - 12vmin - 15vmin); /* Чтобы учесть padding и значки языка ( - 32pt - 2vmin) */
+	margin: 0;
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	padding-left: 12vmin;
+	padding-right: 15vmin;
+
+	font-size: 18pt;
+
+	background-color: hsla(0, 0%, 50%, 0.0);
+	color: black;
+
+	transition-duration: 0.5s;
+}
+.main_title:hover {
+	background-color: hsla(0, 0%, 50%, 0.2);
+	color: white;
+	background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+
+
+
+.top_panel {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: calc(100% - 12vmin);
+	justify-content: space-between;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	padding-left: 6vmin;
+	padding-right: 6vmin;
+	z-index: 2;
+
+	background-color: hsla(0, 0%, 0%, 0.2);
+
+	transition-duration: 0.5s;
+}
+.top_panel_sticky {
+	top: 0vh;
+	position: fixed;
+	background-color: hsla(0, 0%, 90%, 0.9);
+	box-shadow: 0 0 25px 0px black;
+}
+@media screen and (min-width: 1280px) {
+	.main_title {
+		width: calc(100% - 12vmin - 15vmin);
+		padding-left: 12vmin;
+		padding-right: 15vmin;
+	}
+	.top_panel {
+		padding-left: calc(6vmin + (100% - 1280px) / 2);
+		padding-right: calc(6vmin + (100% - 1280px) / 2);
+		width: calc(100% - (6vmin + (100% - 1280px) / 2) * 2);
+	}
+}
+
+
+
+
+.top_panel_button {
+	display: inline-block;
+	position: relative;
+	padding-top: 3vmin;
+	padding-bottom: 3vmin;
+	padding-left: 6vmin;
+	padding-right: 6vmin;
+
+	font-size: 14pt;
+
+	transition-duration: 0.5s;
+}
+.top_panel_button___with_submenu {
+	/* Hack for ripple effect, it adds "overflow: hidden;" to .top_panel_button class */
+	/*overflow: visible;*/
+}
+.top_panel_button:hover {
+	color: white;
+	background-color: hsla(0, 0%, 0%, 0.3);
+}
+.top_panel_sticky .top_panel_button:hover {
+	background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+
+
+
+.button_ripple {
+	/* For ripple effect when pressing */
+	overflow: hidden;  /* Needed for ripple effect. */
+	transform: translate3d(0, 0, 0);
+}
+.button_ripple::after {
+	/* Block, which creates for containing circle inside of itself for ripple animation */
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: radial-gradient(circle,#000 10%,transparent 10.01%);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	transform: scale(10,10);
+	opacity: 0;
+	transition: transform 0.5s,opacity 1s;
+}
+.button_ripple:active::after {
+	/* For removing and making transparent ripple circle */
+	transform: scale(0,0);
+	opacity: 0.2;
+	transition: 0s;
+}
+
+
+
+
+.top_panel_submenu {
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 0%;
+	min-width: 120%;
+	width: auto;
+	z-index: 3;
+
+	color: black;
+	border-radius: 8px;
+	box-shadow: 0 0 25px 0px black;
+	background-color: hsla(0, 0%, 100%, 1);
+
+	transform: scale(0);
+	transform-origin: 50% 0;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+.top_panel_button:hover .top_panel_submenu {
+	visibility: visible;
+
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+
+
+.top_panel_submenu a {
+	display: block;
+	position: static;
+	padding: 3vmin;
+	width: auto;
+
+	transition-duration: 0.5s;
+}
+.top_panel_submenu a:first-child {
+	border-radius: 8px 8px 0 0;
+}
+.top_panel_submenu a:last-child {
+	border-radius: 0 0 8px 8px;
+}
+.top_panel_submenu a:hover {
+	color: hsl(208, 100%, 40%);
+	/*background-color:  hsla(0, 0%, 0%, 0.1);*/
+}
+
+
+
+
+.language_switcher {
+	display: block;
+	position: absolute;
+	/*top: 3vmin;
+	right: 1vmin;*/
+	top: 0vmin;
+	right: 0vmin;
+	padding-top: 3vmin;
+	padding-right: 1vmin;
+	padding-left: 12vmin;
+	height: 12vmin;
+	z-index: 1;
+}
+.language_button {
+	display: block;
+	width: 32pt;
+	height: 18pt;
+
+	background-size: 100% 100%;
+	box-shadow: 0 0 3pt 0px hsla(0, 0%, 0%, 0.8), inset 0 0 16pt 0px hsla(0, 0%, 0%, 0.8);
+
+	transition-duration: 0.6s;
+}
+.russian_button {
+	background-image: url('../images/flag_russia.svg');
+
+}
+.english_button {
+	background-image: url('../images/flag_usa.svg');
+}
+.language_button_separator {
+	display: block;
+	width: 32pt;
+	height: 9pt;
+}
+.language_button:hover {
+	box-shadow: 0 0 9pt 0px hsla(0, 0%, 0%, 1);
+	/*transform: translate(-10%, 0);*/
+}
+
+
+
+
+.text_right_bottom {
+	position: absolute;
+	z-index: 0;
+	right: 10vw;
+	bottom: 15vh;
+
+	text-shadow: 0 0 15px rgba(0,0,0,1);
+	font-size: 50pt;
+	color: hsl(0, 0%, 85%);
+}
+.text_right_bottom_little {
+	padding-top: 8pt;
+
+	font-size: 12pt;
+}
+@media screen and (max-width: 500px) {
+	.text_right_bottom {
+		font-size: 30pt;
+	}
+	.text_right_bottom_little {
+		font-size: 10pt;
+	}
+}

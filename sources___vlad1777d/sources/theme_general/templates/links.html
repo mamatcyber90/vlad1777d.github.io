@@ -1,0 +1,14 @@
+
+{% set root_relative = '.' + '/' + relpath_to_site(DEFAULT_LANG, main_lang) %}
+	{# relpath_to_site(lang, target_lang) - часть плагина i18n_subsite для пеликана #}
+	{# Получили путь относительно корня сайта, вне зависимости от RELATIVE_URLS == True или False: #}
+
+{% set link___main_page %}{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html{% endset %}
+{% set link___main_page___russian %}{{ root_relative }}/index.html{% endset %}
+{% set link___main_page___english %}{{ root_relative }}/en/index.html{% endset %}
+
+{% set link___glass_themes %}{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page___glass_themes.html{% endset %}
+{% set link___other_soft %}{{ root_relative }}{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/page___other_soft.html{% endset %}
+
+{% set link___your_averters %}{{ root_relative }}/your_averters{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/index.html{% endset %}
+{% set link___web_development %}{{ root_relative }}/web{% if DEFAULT_LANG != "ru"  %}/{{ DEFAULT_LANG }}{% endif %}/web_development.html{% endset %}

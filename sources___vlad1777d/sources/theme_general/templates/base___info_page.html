@@ -1,3 +1,4 @@
+{# Base page for all info pages of all concrete subjects #}
 {% extends "base.html" %}
 
 
@@ -8,11 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block___header.css"/>
 		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block___content.css"/>
 		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/block___footer.css"/>
-
-	<!-- Считаем и, если нужно, запишем данные в куки: -->
-		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/cookies.coffee"></script>
-		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/sticky_panel.coffee"></script>
-		<script type="text/coffeescript" src="{{ root_relative }}/theme/js/first_start.coffee"></script>
+		<link rel="stylesheet" type="text/css" href="{{ root_relative }}/theme/css/page___info_page.css"/>
 
 	<title>{{ SITENAME }}</title>
 {% endblock head %}
@@ -22,16 +19,12 @@
 
 {% block body %}
 
-	{% include "block___header.html" %}
+	{% include "block___header___top_panel.html" %}
 
 	{% block content %}
-		{% include "block___news.html" %}
+		{% include "page___news.html" %} {# news by default #}
 	{% endblock content %}
 
 	{% include "block___footer.html" %}
-
-	{% block late_scripts %}
-	{% endblock late_scripts %}
-	<!-- {{ root_relative }} Because of my bug on github -->
 
 {% endblock body %}

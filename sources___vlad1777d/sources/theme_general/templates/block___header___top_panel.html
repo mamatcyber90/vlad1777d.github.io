@@ -1,0 +1,83 @@
+{% from 'links.html' import
+	link___main_page, link___web_development, link___your_averters, link___glass_themes,
+	link___other_soft
+with context %}
+
+
+{% block header___top_panel %}
+
+<div id="top_panel" class="top_panel"><!-- Про запас символы: ⇣ ↴  -->
+		<a
+			class="top_panel_button   button_ripple"
+			onclick="go_after_timeout(this, event, '{{ link___main_page }}')"
+		>
+			{% if DEFAULT_LANG == "ru"  %}Главная
+			{% else %}Main page
+			{% endif %}
+		</a>
+
+
+		<div class="top_panel_button   top_panel_button___with_submenu">
+			{% if DEFAULT_LANG == "ru"  %}⇣ Мои проекты:
+			{% else %}⇣ My projects:
+			{% endif %}
+			<div class="top_panel_submenu">
+				<a
+					class="button_ripple"
+					onclick="go_after_timeout(this, event, '{{ link___glass_themes }}')"
+				>
+					◰ Glass Themes
+				</a>
+				<a
+					class="button_ripple"
+					onclick="go_after_timeout(this, event, '{{ link___your_averters }}')"
+				>
+					♫
+					{% if DEFAULT_LANG == "ru"  %}Твои обереги
+					{% else %}Your Averters
+					{% endif %}
+				</a>
+				<a
+					class="button_ripple"
+					onclick="go_after_timeout(this, event, '{{ link___other_soft }}')"
+				>
+				{% if DEFAULT_LANG == "ru"  %}
+					Другое ПО
+				{% else %}
+					Other software
+				{% endif %}
+				</a>
+			</div>
+		</div>
+
+
+		<a
+			class="top_panel_button   button_ripple"
+			onclick="go_after_timeout(this, event, '{{ link___web_development }}')"
+		>
+			{% if DEFAULT_LANG == "ru"  %}Создание сайтов
+			{% else %}Web developing
+			{% endif %}
+		</a>
+
+
+		<a
+			class="top_panel_button   button_ripple"
+			onclick="go_after_timeout(this, event)"
+		>
+			{% if DEFAULT_LANG == "ru"  %}Обо мне
+			{% else %}About me
+			{% endif %}
+		</a>
+
+
+		<a
+			class="top_panel_button   button_ripple"
+			onclick="go_after_timeout(this, event)"
+		>
+			{% if DEFAULT_LANG == "ru"  %}Поддержать
+			{% else %}Contribute
+			{% endif %}
+		</a>
+</div>
+{% endblock header___top_panel %}
